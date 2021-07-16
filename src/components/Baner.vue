@@ -35,13 +35,17 @@
             style="max-width: 300px"
           ></b-img>
         </p>
-        <router-link to="#about" style="position: absolute; bottom: 10px"
-          ><b-icon
-            icon="chevron-down"
-            style="cursor: pointer; color: rgb(10, 72, 130)"
-            class="display-4"
-          ></b-icon
-        ></router-link>
+        <b-icon
+          icon="chevron-down"
+          @click="emit"
+          style="
+            cursor: pointer;
+            color: rgb(10, 72, 130);
+            position: absolute;
+            bottom: 10px;
+          "
+          class="display-4"
+        ></b-icon>
       </div>
     </b-row>
   </div>
@@ -51,8 +55,11 @@
 export default {
   name: "baner",
   methods: {
-    gotoSKNI: () => {
+    gotoSKNI() {
       document.location.href = "https://kod.prz.edu.pl/#/";
+    },
+    emit() {
+      this.$emit("clicked",'about');
     },
   },
   mounted() {
@@ -64,8 +71,8 @@ export default {
       let _h = window.innerHeight / 2;
       let _mouseX = e.clientX;
       let _mouseY = e.clientY;
-      let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${
-        50 - (_mouseY - _h) * 0.06
+      let _depth3 = `${50 - (_mouseX - _w) * 0.04}% ${
+        50 - (_mouseY - _h) * 0.04
       }%`;
       let x = `${_depth3}`;
       elem.style.backgroundPosition = x;

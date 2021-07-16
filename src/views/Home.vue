@@ -1,13 +1,18 @@
 <template>
   <div>
-    <baner />
+    <baner @clicked="lol" />
     <b-row
       no-gutters
-      id='about'
-      class="text-justify d-flex align-items-center"
-      style="background: rgb(10, 72, 130); color: white"
+      ref="about"
+      class="text-justify pt-5"
+      align-v="center"
+      align-h="end"
     >
-      <b-col cols="6" class="h4 p-5">
+      <b-col
+        cols="5"
+        class="h4 pl-5 py-5 ml-5 pr-2 text-center"
+        style="background: rgba(10, 72, 130, 0.1)"
+      >
         <p>
           Zawsze chciałeś wziąć udział w Game Jamie? A może napisać swoją własną
           aplikację? U nas zobaczysz, że programowanie nie jest żmudnym
@@ -15,45 +20,43 @@
           wspominać przez długi czas.
         </p>
         <p>
-          Jako uczestnik “SKNI Junior” zostaniesz przydzielony do projektu
-          dobranego pod twoje preferencje, a także poznasz nowe osoby o
-          podobnych zainteresowaniach. Nie musisz się martwić, jeżeli czegoś nie
-          będziesz potrafić. Nasza inicjatywa ma na celu Twój rozwój, dlatego
-          będziemy organizować liczne szkolenia, nie tylko z branży IT. Ponadto
-          wybraliśmy spośród nas mentorów, którzy będą prowadzić Was przez cały
-          czas trwania programu.
+          Celem naszego programu jest stworzenie społeczności w branży IT,
+          nawiązywanie nowych współpracy z firmami, promowanie naszej uczelni
+          oraz przede wszystkim nabór przyszłych członków SKNI „KOD” i ich
+          szerokorozumiany rozwój.
         </p>
+        <b-button
+          pill
+          size="lg"
+          class="mt-2 p-3"
+          style="background: rgb(10, 72, 130)"
+          >Dowiedz się wjęcej</b-button
+        >
       </b-col>
       <b-col cols="6" class="text-center">
         <b-img
           fluid
           center
           :src="require('@/assets/code.jpg')"
-          class="p-5"
-          style="clip-path: inset(5% 20% 15% 10%)"
+          style="
+            filter:drop-shadow(8px 8px 10px gray);
+          "
+          class="pr-5 py-5"
         ></b-img>
       </b-col>
     </b-row>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="100%"
-      height="120"
-      viewBox="0.2 0 178 30"
-      preserveAspectRatio="none"
+
+    <b-row
+      no-gutters
+      align-v="center"
+      class="text-center text-white py-5 my-2"
+      :style="
+        'background:linear-gradient(90deg,rgb(255, 255, 255, 0) 0%,rgba(10, 72, 130, 0.6) 0%), url(' +
+        require('../assets/section_bg.png') +
+        ');background-repeat:no-repeat;background-size:cover'
+      "
     >
-      <g transform="translate(-14.514284,-115.36352)">
-        <path
-          style="fill: #4074b5"
-          d="m 14.74107,115.49581 h 178.02679 v 30.61607 h -29.10417 v -12.47321 h -10.58333 v -8.31548 h -13.98512 v 13.98512 h -20.41072 v -13.98512 h -8.31547 v 7.18155 h -7.18155 v 10.9613 H 85.422617 v -10.9613 H 68.791666 V 121.54343 H 51.40476 v 15.875 H 29.860117 v -9.82739 h -8.693452 v -7.55952 h -6.520089 v -4.53571 z"
-        />
-        <path
-          style="fill: rgb(10, 72, 130)"
-          d="M 14.741071,112.54762 H 192.76786 v 30.61607 H 163.66369 V 130.69048 H 153.08036 V 122.375 h -13.98512 v 13.98512 H 118.68452 V 122.375 h -8.31547 v 7.18155 h -7.18155 v 10.9613 H 85.422617 v -10.9613 H 68.791666 V 118.59524 H 51.40476 v 15.875 H 29.860118 v -9.82739 h -8.693452 v -7.55952 h -6.520089 v -4.53571 z"
-        />
-      </g>
-    </svg>
-    <b-row no-gutters align-v="center" class="text-center">
-      <b-col cols="6">
+      <b-col cols="6" style="border-right: 1px solid white">
         <p class="p-5 h1">Co zyskujesz?</p>
         <ul style="list-style-type: none" class="h3">
           <li>Pomoc mentorów</li>
@@ -72,16 +75,136 @@
         </ul>
       </b-col>
     </b-row>
-    <b-row no-gutters class="p-5 m-5 text-center h2" align-h="center">
-      <b-col cols="12" class="my-3">1. Wypełnij formularz </b-col
-      ><b-icon icon="chevron-double-down"></b-icon>
-      <b-col cols="12" class="my-3">2. Czekaj na przyjęcie</b-col>
-      <b-icon icon="chevron-double-down"></b-icon>
-      <b-col cols="12" class="my-3">3. Dołącz do grupy tematycznej </b-col>
-      <b-icon icon="chevron-double-down"></b-icon>
-      <b-col cols="12" class="my-3"
-        >4. Stwórz wspólny projekt oraz bierz udział w wydarzeniach
+    <b-row no-gutters class="pt-5 m-5 text-center" align-h="center">
+      <b-col cols="auto">
+        <b-icon
+          icon="pencil-square"
+          class="display-4"
+          style="color: rgb(10, 72, 130)"
+        ></b-icon>
+        <p class="h5">1. Wypełnij formularz</p>
       </b-col>
+      <b-icon
+        icon="arrow-right"
+        class="h3 mx-4"
+        style="color: rgb(10, 72, 130)"
+      ></b-icon>
+      <b-col cols="auto">
+        <b-icon
+          icon="alarm"
+          class="display-4"
+          style="color: rgb(10, 72, 130)"
+        ></b-icon>
+        <p class="h5">2. Czekaj na przyjęcie</p>
+      </b-col>
+      <b-icon
+        icon="arrow-right"
+        class="h3 mx-4"
+        style="color: rgb(10, 72, 130)"
+      ></b-icon>
+      <b-col cols="auto">
+        <b-icon
+          icon="person-plus"
+          class="display-4"
+          style="color: rgb(10, 72, 130)"
+        ></b-icon>
+        <p class="h5">3. Dołącz do grupy tematycznej</p>
+      </b-col>
+      <b-icon
+        icon="arrow-right"
+        class="h3 mx-4"
+        style="color: rgb(10, 72, 130)"
+      ></b-icon>
+      <b-col cols="auto">
+        <b-icon
+          icon="graph-up"
+          style="color: rgb(10, 72, 130)"
+          class="display-4"
+        ></b-icon>
+        <p class="h5">4. Rozwijaj swoje umiejętności</p>
+      </b-col>
+    </b-row>
+    <b-row no-gutters align-h="center" class="pb-5">
+      <b-button size="lg" pill style="background: rgb(10, 72, 130)"
+        >Aplikuj</b-button
+      >
+    </b-row>
+    <b-row no-gutters class="p-5" align-h="center">
+      <b-col cols="12"><p class="h1 text-center">Partnerzy</p></b-col
+      ><b-carousel controls background="white" style="max-width: 1000px">
+        <b-carousel-slide>
+          <template v-slot:img>
+            <b-card-group>
+              <b-card
+                style="max-width: 250px; border: 0"
+                class="mx-5"
+                :img-src="require('@/assets/logo_color.png')"
+                overlay
+              ></b-card>
+              <b-card
+                style="max-width: 250px; border: 0"
+                class="mx-5"
+                :img-src="require('@/assets/logo_color.png')"
+                overlay
+              ></b-card>
+              <b-card
+                style="max-width: 250px; border: 0"
+                class="mx-5"
+                :img-src="require('@/assets/logo_color.png')"
+                overlay
+              ></b-card>
+            </b-card-group>
+          </template>
+        </b-carousel-slide>
+        <b-carousel-slide>
+          <template v-slot:img>
+            <b-card-group>
+              <b-card
+                style="max-width: 250px; border: 0"
+                class="mx-5"
+                :img-src="require('@/assets/logo_color.png')"
+                overlay
+              ></b-card>
+              <b-card
+                style="max-width: 250px; border: 0"
+                class="mx-5"
+                :img-src="require('@/assets/logo_color.png')"
+                overlay
+              ></b-card>
+              <b-card
+                style="max-width: 250px; border: 0"
+                class="mx-5"
+                :img-src="require('@/assets/logo_color.png')"
+                overlay
+              ></b-card>
+            </b-card-group>
+          </template>
+        </b-carousel-slide>
+        <b-carousel-slide>
+          <template v-slot:img>
+            <b-card-group>
+              <b-card
+                style="max-width: 250px; border: 0"
+                class="mx-5"
+                :img-src="require('@/assets/logo_color.png')"
+                overlay
+              ></b-card>
+              <b-card
+                style="max-width: 250px; border: 0"
+                class="mx-5"
+                :img-src="require('@/assets/logo_color.png')"
+                overlay
+              ></b-card>
+              <b-card
+                style="max-width: 250px; border: 0"
+                class="mx-5"
+                :img-src="require('@/assets/logo_color.png')"
+                overlay
+              ></b-card>
+            </b-card-group>
+          </template>
+        </b-carousel-slide>
+      </b-carousel>
     </b-row>
   </div>
 </template>
@@ -89,4 +212,23 @@
 <script>
 export default {
   name: "Home",
+  methods: {
+    lol() {
+      var element = this.$refs["about"];
+      element.scrollIntoView({ behavior: "smooth" });
+    },
+  },
 };
+</script>
+
+<style>
+.carousel-control-next-icon {
+  margin-right: -100px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-prev-icon {
+  margin-left: -100px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+</style>
