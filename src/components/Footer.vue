@@ -3,7 +3,7 @@
     <b-row
       no-gutters
       align-h="center"
-      class="p-5 h5 text-center"
+      class="p-5 lead text-center"
       align-v="center"
     >
       <b-img
@@ -21,11 +21,10 @@
       <b-icon icon="instagram" id="instagram" class="mx-2 social"></b-icon>
       <b-tooltip target="instagram" triggers="hover"> Instagram </b-tooltip>
 
-      <span class="pl-2" style="border-left:solid 1px black"
+      <span class="pl-2" style="border-left: solid 1px black"
         >Kontakt <br /><i class="h6"> sknikodprz@gmail.com</i></span
       >
     </b-row>
-    <b-row no-gutters align-h="center" class="pb-3"> </b-row>
   </div>
 </template>
 <script>

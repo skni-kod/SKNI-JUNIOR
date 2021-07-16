@@ -9,10 +9,9 @@
       <b-navbar-toggle target="nav-collapse" class='ml-auto'></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav class="ml-auto h5" ref="navbar">
+        <b-navbar-nav class="ml-auto h5">
           <b-nav-item
             class="px-5"
-            ref="navbar_item"
             v-for="item in items"
             :key="item.name"
             :to="item.link"
@@ -53,19 +52,9 @@ export default {
       if (window.scrollY != 0) {
         this.$data.nav_variant = "background:rgb(10, 72, 130)";
         this.$data.nav_type = 'dark';
-        //this.$refs.navbar.classList.remove("ml-auto");
-        this.$refs.navbar_item.forEach((element) => {
-          element.classList.remove("px-5");
-          element.classList.add("px-3");
-        });
       } else {
         this.$data.nav_variant = "";
         this.$data.nav_type = "light";
-        //this.$refs.navbar.classList.add("ml-auto");
-        this.$refs.navbar_item.forEach((element) => {
-          element.classList.remove("px-3");
-          element.classList.add("px-5");
-        });
       }
     });
   },
