@@ -1,49 +1,35 @@
 <template>
-  <div>
-    <b-navbar
-      toggleable="lg"
-      :type="nav_type"
-      fixed="top"
-      :style="nav_variant"
-    >
-      <b-navbar-toggle target="nav-collapse" class='ml-auto'></b-navbar-toggle>
+  <nav>
+    <v-app-bar  class="align-items-stretch">
+      <v-toolbar-title>
+        SKNI
+      </v-toolbar-title>
 
-      <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav class="ml-auto h5">
-          <b-nav-item
-            class="px-5"
-            v-for="item in items"
-            :key="item.name"
-            :to="item.link"
-            :active="$route.path == item.link"
-            ><b-icon :icon="item.icon"></b-icon> {{ item.name }}</b-nav-item
-          >
-          <b-nav-item-dropdown text=" Dołącz do nas" no-caret>
-            <template slot="button-content">
-              <b-icon icon="person-plus"></b-icon>
-              Dołącz do nas
-            </template>
-            <b-dropdown-item href="#">Uczestnik</b-dropdown-item>
-            <b-dropdown-item href="#">Mentor</b-dropdown-item>
-            <b-dropdown-item href="#">Partner</b-dropdown-item>
-          </b-nav-item-dropdown>
-        </b-navbar-nav>
-      </b-collapse>
-    </b-navbar>
-  </div>
+      <v-spacer></v-spacer>
+
+      <v-list nav dense>
+        <v-list-item v-for="item in items" :key="item.key">
+          <v-list-item-title>{{ item.name }}</v-list-item-title>
+        </v-list-item>
+      </v-list>
+
+    </v-app-bar>
+  </nav>
 </template>
 
 <script>
 export default {
   name: "Navbar",
-  data: function () {
+  data: function() {
     return {
       nav_variant: "",
-      nav_type:'light',
+      nav_type: "light",
       items: [
         { key: "home", link: "/", icon: "house", name: "O programie" },
+        { key: "application", link: "/", icon: "", name: "Jak aplikować?" },
         { key: "mentors", link: "/mentors", icon: "person", name: "Mentorzy" },
-        { key: "home", link: "/projects", icon: "book", name: "Projekty" },
+        { key: "partners", link: "/", icon: "", name: "Partnerzy" },
+        { key: "faq", link: "/", icon: "", name: "FAQ" },
       ],
     };
   },
@@ -51,7 +37,7 @@ export default {
     document.addEventListener("scroll", () => {
       if (window.scrollY != 0) {
         this.$data.nav_variant = "background:rgb(10, 72, 130)";
-        this.$data.nav_type = 'dark';
+        this.$data.nav_type = "dark";
       } else {
         this.$data.nav_variant = "";
         this.$data.nav_type = "light";
