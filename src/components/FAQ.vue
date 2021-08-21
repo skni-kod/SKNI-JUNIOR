@@ -4,16 +4,16 @@
       cols="10"
       v-for="(question, index) in questions"
       :key="question.name"
-      class="pb-2"
+      class="pb-2 d-flex justify-center"
     >
-      <div class="accordion w-50" role="tablist">
-        <b-card no-body class="mb-1" style="border:0;">
+      <div class="accordion" role="tablist" style="width: 700px">
+        <v-card no-body class="mb-2" style="border:0">
           <b-card-header header-tag="header" class="p-1" role="tab">
             <v-btn
               block
               v-b-toggle="String(index)"
               style="background:rgb(10, 72, 130)"
-              class="p-2 rounded-pill white--text"
+              class="p-2 rounded-pill white--text text-sm-h5"
               >{{ question.name }}</v-btn
             >
           </b-card-header>
@@ -28,7 +28,7 @@
               }}</b-card-text>
             </b-card-body>
           </b-collapse>
-        </b-card>
+        </v-card>
       </div>
     </b-col>
   </b-row>
