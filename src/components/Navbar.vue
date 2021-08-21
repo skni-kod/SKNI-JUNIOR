@@ -1,29 +1,22 @@
 <template>
-  <nav>
-    <v-app-bar  class="align-items-stretch">
-      <v-toolbar-title>
+  <v-toolbar color="primary">
+    <v-row>
+      <v-toolbar-title class="ml-4">
         SKNI
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
-
-      <v-list nav dense>
-        <v-list-item v-for="item in items" :key="item.key">
-          <v-list-item-title>{{ item.name }}</v-list-item-title>
-        </v-list-item>
-      </v-list>
-
-    </v-app-bar>
-  </nav>
+      <v-btn v-for="item in items" :key="item.key" class="mr-3">
+        {{ item.name }}
+      </v-btn>
+    </v-row>
+  </v-toolbar>
 </template>
 
 <script>
 export default {
-  name: "Navbar",
-  data: function() {
+  data() {
     return {
-      nav_variant: "",
-      nav_type: "light",
       items: [
         { key: "home", link: "/", icon: "house", name: "O programie" },
         { key: "application", link: "/", icon: "", name: "Jak aplikować?" },
@@ -32,17 +25,6 @@ export default {
         { key: "faq", link: "/", icon: "", name: "FAQ" },
       ],
     };
-  },
-  created() {
-    document.addEventListener("scroll", () => {
-      if (window.scrollY != 0) {
-        this.$data.nav_variant = "background:rgb(10, 72, 130)";
-        this.$data.nav_type = "dark";
-      } else {
-        this.$data.nav_variant = "";
-        this.$data.nav_type = "light";
-      }
-    });
   },
 };
 </script>

@@ -13,23 +13,29 @@
       style="background: rgba(10, 72, 130, 0.1)"
     >
       <p>
-        Zawsze chciałeś wziąć udział w Game Jamie? A może napisać swoją własną
-        aplikację? U nas zobaczysz, że programowanie nie jest żmudnym klepaniem
-        kodu, ale także wyjątkowym przeżyciem, które będziesz wspominać przez
-        długi czas.
+        SKNI JUNIOR to projekt skierowany dla uczniów szkół średnich
+          nastawiony na rozwój uczestników w szeroko pojętej branży IT. Po
+          rekrutacji uczestnicy zostają podzieleni na mniejsze zespoły, do
+          których przydzielony zostaje jeden z mentorów. W ramach projektu
+          zespoły tworzą i rozwijają projekty pozwalające na zapoznanie się z
+          pracą w branży IT. Projekt pomaga rozwijać się uczestnikom między
+          innymi poprzez tworzenie aplikacji, udział w szkoleniach oraz innych
+          wydarzeniach takich jak konferencje czy hackathony. SKNI JUNIOR to nie
+          tylko programowanie, uczestnicy programu mogą rozwijać się we
+          wszelkich możliwych dziedzinach IT od programowania, przez tworzenie
+          grafiki czy prowadzenie social mediów jak również marketing i
+          zarządzanie projektami.
       </p>
       <p>
-        Celem naszego programu jest stworzenie społeczności w branży IT,
-        nawiązywanie nowych współpracy z firmami, promowanie naszej uczelni oraz
-        przede wszystkim nabór przyszłych członków SKNI „KOD” i ich
-        szerokorozumiany rozwój.
+        Jeśli chcesz w przyszłości zostać programistą, copywriterem a nawet
+          kierownikiem projektów, nie czekaj.
       </p>
       <b-button
         pill
         size="lg"
         class="mt-2 p-3"
         style="background: rgb(10, 72, 130)"
-        >Dowiedz się wjęcej</b-button
+        >Aplikuj już dziś!</b-button
       >
     </b-col>
     <b-col cols="6" class="text-center">

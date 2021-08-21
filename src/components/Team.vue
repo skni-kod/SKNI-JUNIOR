@@ -1,86 +1,42 @@
 <template>
-  <div class="container">
-    <div class="section-title" data-aos="fade-up">
-      <h2>Team</h2>
-      <p>
-        Magnam dolores commodi suscipit eius consequatur ex aliquid fuga eum
-        quidem
-      </p>
-    </div>
+  <section>
+    <v-card class="mb-6" flat tile>
+      <h1 class="d-flex justify-center">Mentorzy</h1>
+    </v-card>
 
-    <div class="row">
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-        <div class="member" data-aos="zoom-in">
-          <div class="member-img">
-            <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="" />
-            <div class="social">
-              <a href=""><i class="bi bi-twitter"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
+    <v-row class="mx-2">
+      <v-col v-for="(mentor,i) in mentors" :key="i">
+      <v-card
+        class="col-lg-12 outline rounded-lg mr-2 mb-2"
+      >
+        <div data-aos="zoom-in">
+          <div>
+            <img :src="require('@/assets/logo_color.png')" class="img-fluid" />
           </div>
-          <div class="member-info">
-            <h4>Walter White</h4>
-            <span>Chief Executive Officer</span>
+          <div>
+            <h4>{{mentor.name}}</h4>
+            <span class="green--text">{{mentor.position}}</span>
             <p>
-              Animi est delectus alias quam repellendus nihil nobis dolor. Est
-              sapiente occaecati et dolore. Omnis aut ut nesciunt explicabo qui.
-              Eius nam deleniti ut omnis
+              {{ mentor.description }}
             </p>
           </div>
         </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-        <div class="member" data-aos="zoom-in" data-aos-delay="100">
-          <div class="member-img">
-            <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="" />
-            <div class="social">
-              <a href=""><i class="bi bi-twitter"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="member-info">
-            <h4>Sarah Jhonson</h4>
-            <span>Product Manager</span>
-            <p>
-              Aspernatur iste esse aliquam enim et corporis. Molestiae
-              voluptatem aut eligendi quis aut. Libero vel amet voluptatem eos
-              rerum non doloremque
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-        <div class="member" data-aos="zoom-in" data-aos-delay="200">
-          <div class="member-img">
-            <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="" />
-            <div class="social">
-              <a href=""><i class="bi bi-twitter"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="member-info">
-            <h4>William Anderson</h4>
-            <span>CTO</span>
-            <p>
-              Ut enim possimus nihil cupiditate beatae. Veniam facere quae non
-              qui necessitatibus rerum eos vero. Maxime sit sunt quo dolor autem
-              est qui quaerat
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+      </v-card>
+      </v-col>
+    </v-row >
+  </section>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      mentors: [
+      { name: "ASD", position: "CEO", description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."},
+      { name: "GH", position: "Front", description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."},
+      { name: "Prz", position: "Back", description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
+    ]
+    }
+  }
+};
 </script>

@@ -1,12 +1,14 @@
 <template>
-  <div id="app">
-    <router-view />
-    <Footer></Footer>
-  </div>
+  <v-app>
+    <div id="app">
+      <router-view />
+      <Footer></Footer>
+    </div>
+  </v-app>
 </template>
 
 <script>
-import Footer from './components/Footer.vue';
+import Footer from "./components/Footer.vue";
 export default {
   components: { Footer },
   name: "App",
@@ -18,7 +20,7 @@ export default {
   font-family: comfortaa;
   src: url("./fonts/Comfortaa-Regular.ttf");
 }
-body {
+#app {
   font-family: comfortaa !important;
   scroll-behavior: smooth;
   margin: 0;
