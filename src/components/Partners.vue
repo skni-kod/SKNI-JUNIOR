@@ -1,5 +1,5 @@
 <template>
-  <b-row no-gutters class="p-5 m-5" align-h="center">
+  <b-row no-gutters class="px-5 py-2 mx-5" align-h="center">
     <b-col cols="12"><p class="h1 text-center mt-5 pb-5">Partnerzy</p></b-col
     ><b-carousel controls background="white" style="max-width: 1000px">
       <b-carousel-slide>

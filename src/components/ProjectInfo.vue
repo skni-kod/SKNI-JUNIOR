@@ -9,8 +9,7 @@
   >
     <b-col
       cols="5"
-      class="h4 pl-5 py-5 ml-5 pr-2 text-center"
-      style="background: rgba(10, 72, 130, 0.1)"
+      class="accent h4 pl-5 py-5 ml-5 pr-2 text-center"
     >
       <p>
         SKNI JUNIOR to projekt skierowany dla uczniów szkół średnich
