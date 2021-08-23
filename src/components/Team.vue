@@ -1,6 +1,6 @@
 <template>
   <section>
-    <v-card class="mt-16 mb-8" flat tile>
+    <v-card class="mb-5" flat tile>
       <h1 class="d-flex justify-center font-weight-medium">
         Mentorzy
       </h1>
@@ -11,7 +11,7 @@
         <v-card class="col-lg-12 col-xl-12 outline rounded-lg mr-2 mb-2">
           <div data-aos="zoom-in">
             <div class="d-flex justify-center mb-3">
-              <img :src="require('@/assets/team-3.jpg')" class="img-fluid" />
+              <img :src="require('@/assets/team-3.jpg')" class="img-fluid" style="width: 20vw; min-width: 150px; height: auto;" />
             </div>
             <div>
               <h4>{{ mentor.name }}</h4>

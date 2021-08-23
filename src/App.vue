@@ -24,5 +24,6 @@ export default {
   font-family: comfortaa !important;
   scroll-behavior: smooth;
   margin: 0;
+  background-color: white;
 }
 </style>

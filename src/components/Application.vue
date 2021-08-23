@@ -1,6 +1,6 @@
 <template>
   <section>
-    <v-row no-gutters class="pt-5 mx-5" align="center" justify="center">
+    <v-row no-gutters class="mx-5" align="center" justify="center">
       <p class="h1 pt-3">Dołącz do nas!</p>
     </v-row>
     <v-row
@@ -27,7 +27,7 @@
         active
         pill
         size="lg"
-        class="mt-2 p-3"
+        class="mt-2 px-3 pt-3"
         style="background: rgb(10, 72, 130); cursor: pointer"
         href="https://kod.prz.edu.pl/joinjunior/"
         >Aplikuj!</b-button

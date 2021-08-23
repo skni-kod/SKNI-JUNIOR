@@ -2,19 +2,19 @@
   <div>
     <baner @clicked="lol" />
     <Navbar @go-to="scrolling"></Navbar>
-    <div ref="0">
+    <div ref="0" class="pt-15">
       <project-info />
     </div>
-    <div ref="1">
+    <div ref="1" class="pt-16">
       <team />
     </div>
-    <div ref="2">
+    <div ref="2" class="pt-15">
       <application />
     </div>
-    <div ref="3">
+    <div ref="3" class="pt-15">
       <partners />
     </div>
-    <div ref="4">
+    <div ref="4" class="pt-15">
       <faq />
     </div>
   </div>

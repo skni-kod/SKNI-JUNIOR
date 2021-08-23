@@ -1,11 +1,6 @@
 <template>
   <section>
-    <b-row
-      no-gutters
-      class="text-justify pt-5"
-      align-v="center"
-      align-h="end"
-    >
+    <b-row no-gutters class="text-justify" align-v="center" align-h="end">
       <b-col cols="5" class="accent h4 pl-5 py-5 pr-2 text-center">
         <p>{{ text_skni }}</p>
       </b-col>
@@ -20,17 +15,12 @@
         ></b-img>
       </b-col>
     </b-row>
-    <b-row
-      no-gutters
-      class="text-justify pt-5"
-      align-v="center"
-      align-h="end"
-    >
+    <b-row no-gutters class="text-justify pt-5" align-v="center" align-h="end">
       <b-button
-      active
+        active
         pill
         size="lg"
-        class="mt-2 p-3"
+        class="mt-2 p-3 mb-8"
         style="background: rgb(10, 72, 130); cursor: pointer"
         href="https://kod.prz.edu.pl/joinjunior/"
         >Aplikuj już dziś!</b-button
@@ -44,7 +34,7 @@
 import ProjectInfoExtra from "../components/ProjectInfoExtra.vue";
 
 export default {
-  components: { ProjectInfoExtra},
+  components: { ProjectInfoExtra },
   data() {
     return {
       text_skni:
