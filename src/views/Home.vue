@@ -1,22 +1,32 @@
 <template>
   <div>
-    <baner @clicked="lol"/>
-    <Navbar></Navbar>
-    <project-info ref="about" />
-    <team />
-    <application />
-    <partners />
-    <faq />
+    <baner @clicked="lol" />
+    <Navbar @go-to="scrolling"></Navbar>
+    <div ref="0">
+      <project-info />
+    </div>
+    <div ref="1">
+      <team />
+    </div>
+    <div ref="2">
+      <application />
+    </div>
+    <div ref="3">
+      <partners />
+    </div>
+    <div ref="4">
+      <faq />
+    </div>
   </div>
 </template>
 
 <script>
-import Navbar from '../components/Navbar.vue';
-import Team from '../components/Team.vue';
-import ProjectInfo from '../components/ProjectInfo.vue';
-import Partners from '../components/Partners.vue';
-import Application from '../components/Application.vue';
-import Faq from '../components/FAQ.vue';
+import Navbar from "../components/Navbar.vue";
+import Team from "../components/Team.vue";
+import ProjectInfo from "../components/ProjectInfo.vue";
+import Partners from "../components/Partners.vue";
+import Application from "../components/Application.vue";
+import Faq from "../components/FAQ.vue";
 
 export default {
   components: { Navbar, Team, ProjectInfo, Partners, Application, Faq },
@@ -26,6 +36,10 @@ export default {
       var element = this.$refs["about"];
       element.scrollIntoView({ behavior: "smooth" });
     },
+    scrolling(id) {
+      var element = this.$refs[id];
+      element.scrollIntoView({ behavior: "smooth" })
+    }
   },
 };
 </script>
