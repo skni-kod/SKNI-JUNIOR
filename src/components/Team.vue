@@ -1,7 +1,9 @@
 <template>
   <section>
-    <v-card class="my-16" flat tile>
-      <h1 class="d-flex justify-center text-lg-h1 font-weight-medium">Mentorzy</h1>
+    <v-card class="mt-16 mb-8" flat tile>
+      <h1 class="d-flex justify-center text-h2 font-weight-medium">
+        Mentorzy
+      </h1>
     </v-card>
 
     <v-row class="mx-2">
@@ -9,18 +11,23 @@
         <v-card class="col-lg-12 outline rounded-lg mr-2 mb-2">
           <div data-aos="zoom-in">
             <div class="d-flex justify-center mb-3">
-              <img
-                :src="require('@/assets/team-3.jpg')"
-                class="img-fluid"
-              />
+              <img :src="require('@/assets/team-3.jpg')" class="img-fluid" />
             </div>
             <div>
               <h4>{{ mentor.name }}</h4>
-              <h5 class="green--text">{{ mentor.position }}</h5>
-              <div class="mb-4">
-                <v-icon>mdi-facebook </v-icon>
-                <v-icon>mdi-linkedin </v-icon>
-                <v-icon>mdi-github </v-icon>
+              <h5 class="green--text mb-0 p-0">{{ mentor.position }}</h5>
+              <div class="my-0 ml-0 d-flex justify-center">
+                <v-col cols="6" lg="9" sm="3" class="d-flex justify-center p-1 pl-0 mb-2">
+                  <v-btn icon color="#4267B2" :href="mentor.fb" class="text-decoration-none">
+                    <v-icon>mdi-facebook </v-icon>
+                  </v-btn>
+                  <v-btn icon color="#0e76a8" :href="mentor.link" class="text-decoration-none">
+                    <v-icon>mdi-linkedin </v-icon>
+                  </v-btn>
+                  <v-btn icon color="black" :href="mentor.git" class="text-decoration-none">
+                    <v-icon>mdi-github </v-icon>
+                  </v-btn>
+                </v-col>
               </div>
               <p>
                 {{ mentor.description }}
@@ -45,25 +52,34 @@ export default {
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           git: "/",
           link: "/",
-          fb: "/",
+          fb: "https://kod.prz.edu.pl/#/",
         },
         {
           name: "Adam Kowalski",
           position: "CEO",
           description:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          git: "/",
+          link: "/",
+          fb: "/",
         },
         {
           name: "GH",
           position: "Front",
           description:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          git: "/",
+          link: "/",
+          fb: "/",
         },
         {
           name: "Prz",
           position: "Back",
           description:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          git: "/",
+          link: "/",
+          fb: "/",
         },
       ],
     };
