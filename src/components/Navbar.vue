@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar class="pb-8" dark color="primary" id="nav" :class="{nav: active}">
+  <v-toolbar class="pb-8" dark color="primary" id="nav" app style="position: sticky; top:0; left: 0">
     <v-row align="center">
       <v-toolbar-title class="ml-5 d-none d-md-flex">
         SKNI Junior
@@ -38,24 +38,5 @@ export default {
       this.$emit("go-to", i);
     },
   },
-  mounted() {
-    window.document.onscroll = () => {
-      let navBar = document.getElementById("nav");
-      if (window.scrollY > navBar.offsetTop) {
-        this.active=true;
-      } else {
-        this.active=false;
-      }
-    };
-  },
 };
 </script>
-
-<style scoped>
-.nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-</style>
