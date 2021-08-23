@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar class="pb-8" dark color="primary" id="nav" app style="position: sticky; top:0; left: 0">
+  <v-toolbar class="pb-8" dark color="primary" id="nav" app style="position: sticky; top:0; left: 0; z-index: 1">
     <v-row align="center">
       <v-toolbar-title class="ml-5 d-none d-md-flex">
         SKNI Junior
