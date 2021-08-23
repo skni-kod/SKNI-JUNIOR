@@ -33,7 +33,7 @@ export default {
   name: "Home",
   methods: {
     lol() {
-      var element = this.$refs["about"];
+      var element = this.$refs[0];
       element.scrollIntoView({ behavior: "smooth" });
     },
     scrolling(id) {

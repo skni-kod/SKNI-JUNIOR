@@ -8,26 +8,29 @@
       class="pt-5 mx-5 text-center"
       align="center"
       justify="center"
-      v-for="(icon, i) in icons"
-      :key="i"
     >
-      <v-col cols="auto">
-        <v-icon size="100" color="primary">{{ icon.name }}</v-icon>
-        <p class="h5">{{ icon.description }}</p>
-      </v-col>
-      <v-col cols="auto">
-        <v-icon v-if="i !== 3" class="h3 mx-4" color="primary" size="28"
-          >mdi-arrow-right</v-icon
-        >
-      </v-col>
+      <div v-for="(icon, i) in icons" :key="i">
+        <v-col cols="auto">
+          <v-icon size="100" color="primary">{{ icon.name }}</v-icon>
+          <h5>{{ icon.description }}</h5>
+        </v-col>
+        <v-col>
+          <v-icon v-if="i !== 3" class="mx-2" color="primary" size="36"
+            >mdi-arrow-right</v-icon
+          >
+        </v-col>
+      </div>
     </v-row>
 
-    <v-row no-gutters justify="center" class="pb-5 mb-5">
-      <v-btn
-        dark
-        class="rounded-pill text-subtitle-2"
-        color="primary"
-        >Aplikuj</v-btn
+    <v-row no-gutters justify="center" class="mt-5">
+      <b-button
+        active
+        pill
+        size="lg"
+        class="mt-2 p-3"
+        style="background: rgb(10, 72, 130); cursor: pointer"
+        href="https://kod.prz.edu.pl/joinjunior/"
+        >Aplikuj!</b-button
       >
     </v-row>
   </section>

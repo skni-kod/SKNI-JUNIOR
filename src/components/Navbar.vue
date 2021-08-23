@@ -1,7 +1,7 @@
 <template>
-  <v-toolbar dark color="primary">
+  <v-toolbar class="pb-8" dark color="primary" id="nav" :class="{nav: active}">
     <v-row align="center">
-      <v-toolbar-title class="ml-5 my-1">
+      <v-toolbar-title class="ml-5 d-none d-md-flex">
         SKNI Junior
       </v-toolbar-title>
 
@@ -10,7 +10,7 @@
         text
         v-for="(item, i) in items"
         :key="item.key"
-        class="mr-2 my-1 transparent rounded-pill white--text"
+        class="mr-2 transparent rounded-pill white--text"
         @click="emit(i)"
       >
         {{ item.name }}
@@ -23,6 +23,7 @@
 export default {
   data() {
     return {
+      active: false,
       items: [
         { key: "home", link: "/", icon: "house", name: "O programie" },
         { key: "mentors", link: "/mentors", icon: "person", name: "Mentorzy" },
@@ -37,5 +38,24 @@ export default {
       this.$emit("go-to", i);
     },
   },
+  mounted() {
+    window.document.onscroll = () => {
+      let navBar = document.getElementById("nav");
+      if (window.scrollY > navBar.offsetTop) {
+        this.active=true;
+      } else {
+        this.active=false;
+      }
+    };
+  },
 };
 </script>
+
+<style scoped>
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+</style>
