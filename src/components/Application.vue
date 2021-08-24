@@ -1,24 +1,20 @@
 <template>
   <section>
-    <v-row no-gutters class="mx-5" align="center" justify="center">
-      <p class="h1 pt-3">Dołącz do nas!</p>
+    <v-row no-gutters class="mx-5 align-center justify-center">
+      <h1 class="pt-3">Dołącz do nas!</h1>
     </v-row>
-    <v-row
-      no-gutters
-      class="pt-5 mx-5 text-center"
-      align="center"
-      justify="center"
-    >
-      <div v-for="(icon, i) in icons" :key="i">
-        <v-col cols="auto">
-          <v-icon size="100" color="primary">{{ icon.name }}</v-icon>
+    <v-row no-gutters class="pt-5 mx-1 text-center" justify="center">
+      <div v-for="(icon, i) in icons" :key="i" style="display: inline-block">
+        <div style="display: inline-block; vertical-align: middle">
+          <v-icon size="8vw" color="primary">{{ icon.name }}</v-icon>
           <h5>{{ icon.description }}</h5>
-        </v-col>
-        <v-col>
-          <v-icon v-if="i !== 3" class="mx-2" color="primary" size="36"
+        </div>
+        <div style="display: inline-block; vertical-align: middle">
+          <v-icon v-if="i !== 3" class="mx-2" color="primary" size="3.8vw"
             >mdi-arrow-right</v-icon
           >
-        </v-col>
+          <div style="clear:left"></div>
+        </div>
       </div>
     </v-row>
 
@@ -48,11 +44,11 @@ export default {
         { name: "mdi-alarm", description: "2. Czekaj na przyjęcie" },
         {
           name: "mdi-account-plus-outline",
-          description: "3. Dołącz do grupy tematycznej",
+          description: "3. Dołącz do grupy",
         },
         {
           name: "mdi-finance",
-          description: "4. Rozwijaj swoje umiejętności",
+          description: "4. Rozwijaj umiejętności",
         },
       ],
     };
