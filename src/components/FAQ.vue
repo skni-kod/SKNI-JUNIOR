@@ -6,9 +6,9 @@
           v-for="(question, i) in questions"
           :key="i"
           class="primary white--text my-2 pb-0 rounded-lg"
-          style="width: 700px"
+          style="max-width: 900px"
         >
-          <v-expansion-panel-header class="py-0 my-0">{{
+          <v-expansion-panel-header style="font-size: 18.5px" class="py-0 my-0">{{
             question.name
           }}</v-expansion-panel-header>
           <v-expansion-panel-content
