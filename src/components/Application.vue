@@ -3,32 +3,44 @@
     <v-row no-gutters class="mx-5 align-center justify-center">
       <h1 class="pt-3">Dołącz do nas!</h1>
     </v-row>
-    <v-row no-gutters class="pt-5 mx-1 text-center" justify="center">
-      <div v-for="(icon, i) in icons" :key="i" style="display: inline-block">
-        <div style="display: inline-block; vertical-align: middle">
-          <v-icon size="8vw" color="primary">{{ icon.name }}</v-icon>
-          <h5>{{ icon.description }}</h5>
-        </div>
-        <div style="display: inline-block; vertical-align: middle">
-          <v-icon v-if="i !== 3" class="mx-2" color="primary" size="3.8vw"
-            >mdi-arrow-right</v-icon
-          >
-          <div style="clear:left"></div>
-        </div>
-      </div>
-    </v-row>
-
-    <v-row no-gutters justify="center" class="mt-5">
-      <b-button
-        active
-        pill
-        size="lg"
-        class="mt-2 px-3 pt-3"
-        style="background: rgb(10, 72, 130); cursor: pointer"
-        href="https://kod.prz.edu.pl/joinjunior/"
-        >Aplikuj!</b-button
+    <div class="mx-10">
+      <div
+        class="accent rounded-pill p-5"
+        style="max-width: 1300px; margin:auto"
       >
-    </v-row>
+        <v-row no-gutters class=" text-center" justify="center">
+          <div
+            v-for="(icon, i) in icons"
+            :key="i"
+            justify="center"
+            style="display: inline-block"
+          >
+            <div style="display: inline-block; vertical-align: middle">
+              <v-icon size="8vw" color="primary">{{ icon.name }}</v-icon>
+              <h5>{{ icon.description }}</h5>
+            </div>
+            <div style="display: inline-block; vertical-align: middle">
+              <v-icon v-if="i !== 3" class="mx-2" color="primary" size="3.8vw"
+                >mdi-arrow-right</v-icon
+              >
+              <div style="clear:left"></div>
+            </div>
+          </div>
+        </v-row>
+
+        <v-row no-gutters justify="center" class="mt-5">
+          <b-button
+            active
+            pill
+            size="lg"
+            class="mt-2 px-3 pt-3"
+            style="background: rgb(10, 72, 130); cursor: pointer"
+            href="https://kod.prz.edu.pl/joinjunior/"
+            >Aplikuj!</b-button
+          >
+        </v-row>
+      </div>
+    </div>
   </section>
 </template>
 
