@@ -1,30 +1,44 @@
 <template>
-  <b-row
+  <v-row
     no-gutters
-    align-v="center"
-    class="text-center text-white py-5 my-5"
+    class="justify-center text-center text-white py-12 my-12 mr-12"
   >
-    <b-col cols="6" style="border-right: 1px solid white">
-      <p class="pt-5 pb-2 h1">Co zyskujesz?</p>
-      <ul style="list-style-type: none" class="h3 pb-5">
-        <li>Pomoc mentorów</li>
-        <li>Pierwsze profesjonalne doświadczenie w branży IT</li>
-        <li>Nowe znajomości</li>
-        <li>Patronat największych firm na rynku</li>
+    <v-col cols="12" v-for="(t, i) in text" :key="i">
+      <p class="pt-5 mb-2 h1">{{ t.question }}</p>
+      <ul style="list-style-type: none" class="h3 pb-10">
+        <li v-for="(answer, id) in t.answers" :key="id" class="mb-1">
+          {{ answer }}
+        </li>
       </ul>
-    </b-col>
-    <b-col cols="6">
-      <p class="pt-5 pb-2 h1">Wystarczy że:</p>
-      <ul style="list-style-type: none" class="h3 pb-5">
-        <li>Jesteś uczniem szkoły średniej</li>
-        <li>Posiadasz podstawowe umiejętności informatyczne</li>
-        <li>Potrafisz zachować kulturę osobistą</li>
-        <li>Przejdziesz proces rekrutacyjny</li>
-      </ul>
-    </b-col>
-  </b-row>
+    </v-col>
+  </v-row>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      text: [
+        {
+          question: "Wystarczy że:",
+          answers: [
+            "Jesteś uczniem szkoły średniej",
+            "Posiadasz podstawowe umiejętności informatyczne",
+            "Potrafisz zachować kulturę osobistą",
+            "Przejdziesz proces rekrutacyjny",
+          ],
+        },
+        {
+          question: "Co zyskujesz?",
+          answers: [
+            "Pomoc mentorów",
+            "Pierwsze profesjonalne doświadczenie w branży IT",
+            "Nowe znajomości",
+            "Patronat największych firm na rynku",
+          ],
+        },
+      ],
+    };
+  },
+};
 </script>

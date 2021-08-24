@@ -26,7 +26,10 @@
       </v-col>
     </v-row>
     <v-row no-gutters class="text-justify pt-5 align-center justify-center">
-      <v-col class="accent h5 mx-10 px-4 pt-6 pb-0 mb-3 text-center rounded-xl">
+      <v-col
+        class="accent h5 mx-10 px-4 pt-6 pb-0 mb-3 text-center rounded-xl"
+        style="max-width: 1200px"
+      >
         <p v-html="text_end"></p>
         <b-button
           active
@@ -39,7 +42,7 @@
         >
       </v-col>
     </v-row>
-    <project-info-extra></project-info-extra>
+    <project-info-extra />
   </section>
 </template>
 
