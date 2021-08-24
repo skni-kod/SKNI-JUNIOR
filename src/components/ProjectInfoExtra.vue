@@ -3,11 +3,6 @@
     no-gutters
     align-v="center"
     class="text-center text-white py-5 my-5"
-    :style="
-      'background:linear-gradient(90deg,rgb(255, 255, 255, 0) 0%,rgba(10, 72, 130, 0.6) 0%), url(' +
-        require('../assets/section_bg.png') +
-        ');background-repeat:no-repeat;background-size:cover'
-    "
   >
     <b-col cols="6" style="border-right: 1px solid white">
       <p class="pt-5 pb-2 h1">Co zyskujesz?</p>

@@ -2,7 +2,7 @@
   <div>
     <baner @clicked="lol" />
     <Navbar @go-to="scrolling"></Navbar>
-    <div ref="0" style="padding-top: 100px">
+    <div ref="0">
       <project-info />
     </div>
     <div ref="1" style="padding-top: 100px">
