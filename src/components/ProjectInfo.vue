@@ -9,7 +9,7 @@
     <v-row no-gutters class="text-justify mx-10 align-center">
       <v-col
         cols="auto"
-        class="accent h5 px-4 py-6 mb-3 text-center rounded-xl"
+        class="accent h5 px-4 pt-5 pb-2 mb-3 text-center rounded-xl"
       >
         <p>{{ text_skni }}</p>
       </v-col>
@@ -21,13 +21,13 @@
           class="d-flex justify-center rounded py-5 my-2"
         ></v-img>
       </v-col>
-      <v-col class="accent h5 px-4 p-2 mb-0 text-center rounded-xl">
+      <v-col class="accent h5 px-4 pt-5 pb-2 mb-0 text-center rounded-xl">
         <p>{{ text_app }}</p>
       </v-col>
     </v-row>
     <v-row no-gutters class="text-justify pt-5 align-center justify-center">
       <v-col
-        class="accent h5 mx-10 px-4 pt-6 pb-0 mb-3 text-center rounded-xl"
+        class="accent h5 mx-10 px-4 pt-6 pb-3 mb-3 text-center rounded-xl"
         style="max-width: 1200px"
       >
         <p v-html="text_end"></p>

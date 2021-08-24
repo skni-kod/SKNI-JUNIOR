@@ -10,7 +10,7 @@
         fluid
         style="height: 40px; border-right: 1px solid black"
         :src="require('../assets/logo_black.svg')"
-        class="pr-2"
+        class="pr-3 mr-1"
       ></b-img>
       <a href="https://kod.prz.edu.pl/#/">
         <b-icon
@@ -49,8 +49,8 @@
         <b-tooltip target="instagram" triggers="hover"> Instagram </b-tooltip>
       </a>
 
-      <span class="pl-2" style="border-left: solid 1px black"
-        >Kontakt <br /><i class="h6"> sknikodprz@gmail.com</i></span
+      <span class="ml-3" style="border-left: solid 1px black"
+        >Kontakt <br /><i class="h6 pl-4"> sknikodprz@gmail.com</i></span
       >
     </b-row>
   </div>
