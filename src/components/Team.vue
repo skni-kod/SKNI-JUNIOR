@@ -14,7 +14,7 @@
               <img
                 :src="require('@/assets/team-3.jpg')"
                 class="img-fluid"
-                style="width: 20vw; min-width: 150px; height: auto;"
+                style="width: 20vw; min-width: 180px; height: auto;"
               />
             </div>
             <div>
