@@ -8,7 +8,7 @@
 
     <v-row class="mx-2">
       <v-col v-for="(mentor, i) in mentors" :key="i">
-        <v-card class="col-12 outline rounded-lg">
+        <v-card class="col-12 outline rounded-lg" color="info">
           <div data-aos="zoom-in">
             <div class="d-flex justify-center mb-3">
               <img
