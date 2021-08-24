@@ -8,7 +8,7 @@
 
     <v-row class="mx-2">
       <v-col v-for="(mentor, i) in mentors" :key="i">
-        <v-card class="col-lg-12 col-xl-12 outline rounded-lg mr-2 mb-2">
+        <v-card class="col-12 outline rounded-lg">
           <div data-aos="zoom-in">
             <div class="d-flex justify-center mb-3">
               <img
@@ -29,7 +29,7 @@
                     class="text-decoration-none"
                     style="margin-right: 0.8vw"
                   >
-                    <v-icon size="36">mdi-facebook </v-icon>
+                    <v-icon size="33">mdi-facebook </v-icon>
                   </v-btn>
                   <v-btn
                     icon
@@ -38,7 +38,7 @@
                     class="text-decoration-none"
                     style="margin-right: 0.8vw"
                   >
-                    <v-icon size="36">mdi-linkedin </v-icon>
+                    <v-icon size="33">mdi-linkedin </v-icon>
                   </v-btn>
                   <v-btn
                     icon
@@ -46,7 +46,7 @@
                     :href="mentor.git"
                     class="text-decoration-none"
                   >
-                    <v-icon size="36">mdi-github </v-icon>
+                    <v-icon size="33">mdi-github </v-icon>
                   </v-btn>
                 </v-col>
               </div>
