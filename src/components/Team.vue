@@ -1,7 +1,7 @@
 <template>
   <section>
     <v-card class="mb-5" flat tile>
-      <h1 class="d-flex justify-center font-weight-medium">
+      <h1 class="d-flex justify-center font-weight-medium" style="background-color: rgb(247,247,247)">
         Mentorzy
       </h1>
     </v-card>
