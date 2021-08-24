@@ -12,14 +12,42 @@
         :src="require('../assets/logo_black.svg')"
         class="pr-2"
       ></b-img>
-      <b-icon icon="globe" id="web" class="mx-2 social"></b-icon>
-      <b-tooltip target="web" triggers="hover"> SKNI KOD </b-tooltip>
-      <b-icon icon="facebook" id="fb" class="mx-2 social"></b-icon>
-      <b-tooltip target="fb" triggers="hover"> Facebook </b-tooltip>
-      <b-icon icon="linkedin" class="mx-2 social" id="linkedin"></b-icon>
-      <b-tooltip target="linkedin" triggers="hover"> Linkedin </b-tooltip>
-      <b-icon icon="instagram" id="instagram" class="mx-2 social"></b-icon>
-      <b-tooltip target="instagram" triggers="hover"> Instagram </b-tooltip>
+      <a href="https://kod.prz.edu.pl/#/">
+        <b-icon
+          color="black"
+          icon="globe"
+          id="web"
+          class="mx-2 social"
+        ></b-icon>
+        <b-tooltip target="web" triggers="hover"> SKNI KOD </b-tooltip>
+      </a>
+      <a href="https://www.facebook.com/skni.kod">
+        <b-icon
+          icon="facebook"
+          color="black"
+          id="fb"
+          class="mx-2 social"
+        ></b-icon>
+        <b-tooltip target="fb" triggers="hover"> Facebook </b-tooltip>
+      </a>
+      <a href="https://www.linkedin.com/company/skni-kod">
+        <b-icon
+          icon="linkedin"
+          color="black"
+          class="mx-2 social"
+          id="linkedin"
+        ></b-icon>
+        <b-tooltip target="linkedin" triggers="hover"> Linkedin </b-tooltip>
+      </a>
+      <a href="https://www.instagram.com/skni.kod/">
+        <b-icon
+          icon="instagram"
+          color="black"
+          id="instagram"
+          class="mx-2 social"
+        ></b-icon>
+        <b-tooltip target="instagram" triggers="hover"> Instagram </b-tooltip>
+      </a>
 
       <span class="pl-2" style="border-left: solid 1px black"
         >Kontakt <br /><i class="h6"> sknikodprz@gmail.com</i></span
@@ -42,5 +70,8 @@ export default {
   color: rgb(10, 72, 130) !important;
 
   transform: scale(1.5);
+}
+a {
+  text-decoration: none;
 }
 </style>
