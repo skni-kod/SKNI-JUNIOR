@@ -1,8 +1,18 @@
 <template>
-  <v-toolbar class="pb-8" dark color="primary" id="nav" style="position: sticky; top:0; left: 0; z-index: 1">
+  <v-toolbar
+    height="85px"
+    dark
+    color="primary"
+    id="nav"
+    style="position: sticky; top:0; left: 0; z-index: 1"
+  >
     <v-row align="center">
       <v-toolbar-title class="ml-5 d-none d-md-flex">
-        SKNI Junior
+        <img
+          :src="require('@/assets/logaSKNI-KOD/logo_white.png')"
+          class="img-fluid"
+          style="height: 100px"
+        />
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
