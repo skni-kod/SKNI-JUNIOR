@@ -1,7 +1,10 @@
 <template>
   <section>
     <v-card class="mb-5" flat tile>
-      <h1 class="d-flex justify-center font-weight-medium" style="background-color: rgb(247,247,247)">
+      <h1
+        class="d-flex justify-center font-weight-medium"
+        style="background-color: rgb(247,247,247)"
+      >
         Mentorzy
       </h1>
     </v-card>
@@ -12,7 +15,7 @@
           <div data-aos="zoom-in">
             <div class="d-flex justify-center mb-3">
               <img
-                :src="require('@/assets/team-3.jpg')"
+                :src="mentor.jpg"
                 class="img-fluid"
                 style="width: 20vw; min-width: 180px; height: auto;"
               />
@@ -24,29 +27,21 @@
                 <v-col cols="6" class="d-flex justify-center p-1 pl-0 mb-2">
                   <v-btn
                     icon
-                    color="#4267B2"
-                    :href="mentor.fb"
+                    color="black"
+                    :href="mentor.git"
                     class="text-decoration-none"
-                    style="margin-right: 0.8vw"
                   >
-                    <v-icon size="33">mdi-facebook </v-icon>
+                    <v-icon size="34">mdi-github</v-icon>
                   </v-btn>
                   <v-btn
                     icon
                     color="#0e76a8"
                     :href="mentor.link"
                     class="text-decoration-none"
+                    :disabled="!mentor.active"
                     style="margin-right: 0.8vw"
                   >
-                    <v-icon size="33">mdi-linkedin </v-icon>
-                  </v-btn>
-                  <v-btn
-                    icon
-                    color="black"
-                    :href="mentor.git"
-                    class="text-decoration-none"
-                  >
-                    <v-icon size="33">mdi-github </v-icon>
+                    <v-icon size="34">mdi-linkedin</v-icon>
                   </v-btn>
                 </v-col>
               </div>
@@ -67,40 +62,54 @@ export default {
     return {
       mentors: [
         {
-          name: "Adam Kowalski",
+          name: "Oskar Tyniec",
           position: "CEO",
+          jpg: require('@/assets/team-3.jpg'),
           description:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-          git: "/",
-          link: "/",
-          fb: "https://kod.prz.edu.pl/#/",
+          git: "https://github.com/Rakso12",
+          link: "https://www.linkedin.com/in/oskartyniec/",
+          active: true,
         },
         {
-          name: "Adam Kowalski",
+          name: "Mateusz Fesz",
           position: "CEO",
+          jpg: require('@/assets/team-3.jpg'),
           description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-          git: "/",
-          link: "/",
-          fb: "/",
+            "Absolwent Zespołu Szkół Technicznych i Ogólnokształcących w Krośnie, interesuje się głównie programowaniem niskopoziomowym. Członek m.in zespołu rozwijającego system operacyjny MicrOS, a także pasjonat języka programowania RUST. W wolnym czasie bawi się arduino i szkoli swoje techniki kulinarne",
+          git: "https://github.com/MatiF100",
+          link: "",
+          active: false,
         },
         {
-          name: "GH",
-          position: "Front",
+          name: "Kacper Maciołek",
+          position: "Game Developer",
+          jpg: require('@/assets/team-3.jpg'),
           description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-          git: "/",
-          link: "/",
-          fb: "/",
+            "chuj wie bo sam nie wiem co che",
+          git: "https://github.com/Kacperacy",
+          link: "https://www.linkedin.com/in/kacper-macio%C5%82ek-577564209/",
+          active: true,
         },
         {
-          name: "Prz",
-          position: "Back",
+          name: "Adrian Malec",
+          position: "Frontend Developer",
+          jpg: require('@/assets/team-3.jpg'),
+          description:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          git: "https://github.com/f10k1",
+          link: " https://www.linkedin.com/in/adrian-malec-a252321a1/",
+          active: true,
+        },
+        {
+          name: "Maciek Pietrasz",
+          position: "Pixel Art Designer",
+          jpg: require('@/assets/team-3.jpg'),
           description:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           git: "/",
           link: "/",
-          fb: "/",
+          active: true,
         },
       ],
     };
