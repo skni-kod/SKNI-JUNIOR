@@ -20,7 +20,7 @@
         text
         v-for="(item, i) in items"
         :key="item.key"
-        class="mr-2 transparent rounded-pill px-3 white--text"
+        class="mr-4 transparent rounded-pill px-4 white--text"
         @click="emit(i)"
       >
         {{ item.name }}

@@ -1,6 +1,6 @@
 <template>
   <section>
-    <v-row no-gutters class="mx-5 align-center justify-center">
+    <v-row no-gutters class="mx-5 mb-5 align-center justify-center">
       <h1 class="pt-3">Dołącz do nas!</h1>
     </v-row>
     <div class="mx-10">
