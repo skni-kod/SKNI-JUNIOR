@@ -1,16 +1,21 @@
 <template>
   <v-row justify="center">
-    <v-col cols="7">
-      <v-expansion-panels focusable accordion class="mb-4 mx-6">
+    <v-col cols="10">
+      <h1 class="text-center">Najczęściej zadawane pytania</h1>
+    </v-col>
+      <v-col sm="11" md="9" lg="8" xl="6" class="mx-2 mb-16 pb-4">
+      <v-expansion-panels focusable accordion>
         <v-expansion-panel
           v-for="(question, i) in questions"
           :key="i"
           class="primary white--text my-2 rounded-lg"
-          style="max-width: 900px;"
+          style="max-width: 700px;"
         >
-          <v-expansion-panel-header style="font-size: 18.5px" class="py-3 my-0">{{
-            question.name
-          }}</v-expansion-panel-header>
+          <v-expansion-panel-header
+            style="font-size: 18.5px"
+            class="py-3 my-0"
+            >{{ question.name }}</v-expansion-panel-header
+          >
           <v-expansion-panel-content
             v-html="question.response"
             class="white black--text py-3 px-5"
