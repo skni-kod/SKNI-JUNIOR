@@ -7,11 +7,11 @@
     style="position: sticky; top:0; left: 0; z-index: 1"
   >
     <v-row align="center">
-      <v-toolbar-title class="ml-5 d-none d-md-flex">
+      <v-toolbar-title class="ml-4 d-none d-md-flex">
         <img
-          :src="require('@/assets/logaSKNI-KOD/logo_white.png')"
+          :src="require('@/assets/logaSKNI-KOD/logoJunior2.png')"
           class="img-fluid"
-          style="height: 100px"
+          style="height: 78px"
         />
       </v-toolbar-title>
 
@@ -20,7 +20,7 @@
         text
         v-for="(item, i) in items"
         :key="item.key"
-        class="mr-2 transparent rounded-pill white--text"
+        class="mr-2 transparent rounded-pill px-3 white--text"
         @click="emit(i)"
       >
         {{ item.name }}
@@ -37,7 +37,7 @@ export default {
       items: [
         { key: "home", link: "/", icon: "house", name: "O programie" },
         { key: "mentors", link: "/mentors", icon: "person", name: "Mentorzy" },
-        { key: "application", link: "/", icon: "", name: "Jak aplikować?" },
+        { key: "application", link: "/", icon: "", name: "Rekrutacja" },
         { key: "partners", link: "/", icon: "", name: "Partnerzy" },
         { key: "faq", link: "/", icon: "", name: "FAQ" },
       ],
