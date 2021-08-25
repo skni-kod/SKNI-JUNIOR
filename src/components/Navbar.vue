@@ -9,7 +9,7 @@
     <v-row align="center">
       <v-toolbar-title class="ml-4 d-none d-md-flex">
         <img
-          :src="require('@/assets/logaSKNI-KOD/logoJunior2.png')"
+          :src="require('@/assets/logaSKNI-KOD/logoJunior.png')"
           class="img-fluid"
           style="height: 78px"
         />

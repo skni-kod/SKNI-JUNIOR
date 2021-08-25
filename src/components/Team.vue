@@ -64,7 +64,7 @@ export default {
         {
           name: "Oskar Tyniec",
           position: "CEO",
-          jpg: require('@/assets/team-3.jpg'),
+          jpg: require('@/assets/mentorzy/team-3.jpg'),
           description:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           git: "https://github.com/Rakso12",
@@ -74,7 +74,7 @@ export default {
         {
           name: "Mateusz Fesz",
           position: "CEO",
-          jpg: require('@/assets/team-3.jpg'),
+          jpg: require('@/assets/mentorzy/team-3.jpg'),
           description:
             "Absolwent Zespołu Szkół Technicznych i Ogólnokształcących w Krośnie, interesuje się głównie programowaniem niskopoziomowym. Członek m.in zespołu rozwijającego system operacyjny MicrOS, a także pasjonat języka programowania RUST. W wolnym czasie bawi się arduino i szkoli swoje techniki kulinarne",
           git: "https://github.com/MatiF100",
@@ -84,7 +84,7 @@ export default {
         {
           name: "Kacper Maciołek",
           position: "Game Developer",
-          jpg: require('@/assets/team-3.jpg'),
+          jpg: require('@/assets/mentorzy/team-3.jpg'),
           description:
             "chuj wie bo sam nie wiem co che",
           git: "https://github.com/Kacperacy",
@@ -94,7 +94,7 @@ export default {
         {
           name: "Adrian Malec",
           position: "Frontend Developer",
-          jpg: require('@/assets/team-3.jpg'),
+          jpg: require('@/assets/mentorzy/team-3.jpg'),
           description:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           git: "https://github.com/f10k1",
@@ -104,7 +104,7 @@ export default {
         {
           name: "Maciek Pietrasz",
           position: "Pixel Art Designer",
-          jpg: require('@/assets/team-3.jpg'),
+          jpg: require('@/assets/mentorzy/team-3.jpg'),
           description:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           git: "/",
