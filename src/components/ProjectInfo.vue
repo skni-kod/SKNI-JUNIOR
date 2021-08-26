@@ -16,7 +16,7 @@
         </v-col>
       </v-row>
     </div>
-    <div v-else-if="$vuetify.breakpoint.mdAndUp" style="margin: auto">
+    <div v-else-if="$vuetify.breakpoint.mdAndUp" style="margin: 20px auto">
       <v-row class="text-justify mx-10 align-center">
         <v-col
           cols="auto"
