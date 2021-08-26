@@ -1,33 +1,66 @@
 <template>
-  <section
-    :style="
-      'background:linear-gradient(90deg,rgb(255, 255, 255, 0) 0%,rgba(10, 72, 130, 0.6) 0%), url(' +
-        require('../assets/section_bg.png') +
-        ');background-repeat:no-repeat;background-size:cover; padding-top: 100px'
-    "
-  >
-    <v-row no-gutters class="text-justify mx-10 align-center">
-      <v-col
-        cols="auto"
-        class="accent h5 px-4 pt-5 pb-2 mb-3 text-center rounded-xl"
-      >
-        <p>{{ text_skni }}</p>
-      </v-col>
-      <v-col cols="6">
-        <v-img
-          fluid
-          :src="require('@/assets/code.jpg')"
-          style="width: 40vw; margin-right:5.5vw; max-height: 600px; filter: drop-shadow(4px 3px 2px SteelBlue)"
-          class="d-flex justify-center rounded py-5 my-2"
-        ></v-img>
-      </v-col>
-      <v-col class="accent h5 px-4 pt-5 pb-2 mb-0 text-center rounded-xl">
-        <p>{{ text_app }}</p>
-      </v-col>
-    </v-row>
+  <section style="padding-top: 100px">
+    <div v-if="$vuetify.breakpoint.xlOnly">
+      <v-row no-gutters class="align-center justify-center text-center" style="margin: 0px 100px">
+        <v-col cols="5" class="mx-16">
+          <v-img
+            fluid
+            :src="require('@/assets/coding.jpg')"
+            style="width: 45vw; max-height: 500px; filter: drop-shadow(3px 3px 3px BurlyWood)"
+            class="d-flex justify-center rounded py-5 my-2"
+          ></v-img>
+        </v-col>
+        <v-col cols="5" class="accent h5 px-4 pt-5 pb-2 mb-0 mx-16 text-center rounded-xl">
+          <p>{{ text_skni }}</p>
+          <p>{{ text_app }}</p>
+        </v-col>
+      </v-row>
+    </div>
+    <div v-else-if="$vuetify.breakpoint.mdAndUp">
+      <v-row no-gutters class="text-justify mx-10 align-center">
+        <v-col
+          cols="auto"
+          class="accent h5 px-4 pt-5 pb-2 mb-3 text-center rounded-xl"
+        >
+          <p>{{ text_skni }}</p>
+        </v-col>
+        <v-col cols="6">
+          <v-img
+            fluid
+            :src="require('@/assets/coding.jpg')"
+            style="width: 42vw; max-height: 400px; filter: drop-shadow(3px 3px 3px BurlyWood)"
+            class="d-flex justify-center rounded py-5 my-4"
+          ></v-img>
+        </v-col>
+        <v-col class="accent h5 px-4 pt-5 pb-2 mb-0 text-center rounded-xl">
+          <p>{{ text_app }}</p>
+        </v-col>
+      </v-row>
+    </div>
+    <div v-else>
+      <v-row no-gutters class="text-justify mx-10 align-center">
+        <v-col
+          cols="auto"
+          class="accent h5 px-4 pt-5 pb-2 mb-5 text-center rounded-xl"
+        >
+          <p>{{ text_skni }}</p>
+        </v-col>
+        <v-col cols="auto" class="accent h5 px-4 pt-5 pb-2 my-5 text-center rounded-xl">
+          <p>{{ text_app }}</p>
+        </v-col>
+        <v-col cols="auto">
+          <v-img
+            fluid
+            :src="require('@/assets/coding.jpg')"
+            style="max-height: 450px; filter: drop-shadow(3px 3px 3px BurlyWood)"
+            class="d-flex justify-center rounded py-5 my-5"
+          ></v-img>
+        </v-col>
+      </v-row>
+    </div>
     <v-row no-gutters class="text-justify pt-5 align-center justify-center">
       <v-col
-        class="accent h5 mx-10 px-4 pt-6 pb-3 mb-3 text-center rounded-xl"
+        class="accent h5 mx-10 px-4 pt-6 pb-3 mb-16 text-center rounded-xl"
         style="max-width: 1200px"
       >
         <p v-html="text_end"></p>
