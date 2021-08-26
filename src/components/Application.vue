@@ -28,13 +28,12 @@
           </div>
         </v-row>
 
-        <v-row no-gutters justify="center" class="mt-5">
+        <v-row no-gutters justify="center" class="mt-8">
           <b-button
             active
             pill
-            size="lg"
-            class="mt-2 px-3 pt-3"
-            style="background: rgb(10, 72, 130); cursor: pointer"
+            class="mt-0 p-3 mb-5"
+            style="background: rgb(10, 72, 130); cursor: pointer; font-size: 1.65rem"
             href="https://kod.prz.edu.pl/joinjunior/"
             >Aplikuj!</b-button
           >
