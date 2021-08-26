@@ -1,6 +1,6 @@
 <template>
   <v-toolbar
-    height="85px"
+    height="90px"
     dark
     color="primary"
     id="nav"
@@ -11,7 +11,7 @@
         <img
           :src="require('@/assets/logaSKNI-KOD/logoJunior.png')"
           class="img-fluid"
-          style="height: 78px"
+          style="height: 75px"
         />
       </v-toolbar-title>
 
