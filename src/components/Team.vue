@@ -9,20 +9,19 @@
       </h1>
     </v-card>
 
-    <v-row class="mx-2">
+    <v-row class="mx-1">
       <v-col
-        class="mx-auto"
         v-for="(mentor, i) in mentors"
         :key="i"
-        style="max-width: 900px"
+        style="max-width: 900px; min-width: 335px; margin-left:auto; margin-right:auto;"
       >
-        <v-card class="info col-12 outline rounded-lg mx-2">
+        <v-card class="info col-12 outline rounded-lg">
           <div data-aos="zoom-in">
             <div class="d-flex justify-center mb-3">
               <img
                 :src="mentor.jpg"
                 class="img-fluid"
-                style="width: 18vw; min-width: 140px; max-width: 280px; height: auto;"
+                style="width: 15vw; min-width: 150px; max-width: 250px; height: auto;"
               />
             </div>
             <div>
