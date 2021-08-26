@@ -28,7 +28,7 @@
                   <v-btn
                     icon
                     color="black"
-                    :href="mentor.git"
+                    @click="open(mentor.git)"
                     class="text-decoration-none"
                   >
                     <v-icon size="34">mdi-github</v-icon>
@@ -36,7 +36,7 @@
                   <v-btn
                     icon
                     color="#0e76a8"
-                    :href="mentor.link"
+                    @click="open(mentor.link)"
                     class="text-decoration-none"
                     :disabled="!mentor.active"
                     style="margin-right: 0.8vw"
@@ -64,19 +64,19 @@ export default {
         {
           name: "Oskar Tyniec",
           position: "CEO",
-          jpg: require('@/assets/mentorzy/team-3.jpg'),
+          jpg: require("@/assets/mentorzy/team-3.jpg"),
           description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            'Pasjonat metodyk zwinnych, certyfikowany Scrum Master, koordynator projektów oraz osoba odpowiedzialna za PR Studenckiego Koła Naukowego Informatyków "KOD".',
           git: "https://github.com/Rakso12",
           link: "https://www.linkedin.com/in/oskartyniec/",
           active: true,
         },
         {
           name: "Mateusz Fesz",
-          position: "CEO",
-          jpg: require('@/assets/mentorzy/team-3.jpg'),
+          position: "Low-Level Programmer",
+          jpg: require("@/assets/mentorzy/team-3.jpg"),
           description:
-            "Absolwent Zespołu Szkół Technicznych i Ogólnokształcących w Krośnie, interesuje się głównie programowaniem niskopoziomowym. Członek m.in zespołu rozwijającego system operacyjny MicrOS, a także pasjonat języka programowania RUST. W wolnym czasie bawi się arduino i szkoli swoje techniki kulinarne",
+            "Absolwent Zespołu Szkół Technicznych i Ogólnokształcących w Krośnie, interesuje się głównie programowaniem niskopoziomowym. Członek m.in zespołu rozwijającego system operacyjny MicrOS, a także pasjonat języka programowania RUST. W wolnym czasie bawi się arduino i szkoli swoje techniki kulinarne.",
           git: "https://github.com/MatiF100",
           link: "",
           active: false,
@@ -84,9 +84,9 @@ export default {
         {
           name: "Kacper Maciołek",
           position: "Game Developer",
-          jpg: require('@/assets/mentorzy/team-3.jpg'),
+          jpg: require("@/assets/mentorzy/team-3.jpg"),
           description:
-            "chuj wie bo sam nie wiem co che",
+            'Absolwent Zespołu Szkół Technicznych w Mielcu. Lider zespołu tworzącego grę Roguelike w SKNI "KOD". W wolnym czasie zacięty gracz Football Managera.',
           git: "https://github.com/Kacperacy",
           link: "https://www.linkedin.com/in/kacper-macio%C5%82ek-577564209/",
           active: true,
@@ -94,7 +94,7 @@ export default {
         {
           name: "Adrian Malec",
           position: "Frontend Developer",
-          jpg: require('@/assets/mentorzy/team-3.jpg'),
+          jpg: require("@/assets/mentorzy/team-3.jpg"),
           description:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           git: "https://github.com/f10k1",
@@ -104,15 +104,20 @@ export default {
         {
           name: "Maciek Pietrasz",
           position: "Pixel Art Designer",
-          jpg: require('@/assets/mentorzy/team-3.jpg'),
+          jpg: require("@/assets/mentorzy/team-3.jpg"),
           description:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-          git: "/",
+          git: "https://github.com/Komosabe",
           link: "/",
           active: true,
         },
       ],
     };
+  },
+  methods: {
+    open(link) {
+      window.open(link, "_blank");
+    },
   },
 };
 </script>
