@@ -19,10 +19,19 @@
           :href="icon.link"
           style="text-decoration: none"
         >
-          <v-icon large color="black" class="mx-2 social">{{ icon.name }}</v-icon>
-          <v-tooltip top :target="i" triggers="hover">
-            {{ icon.description }}</v-tooltip
-          >
+          <v-tooltip top>
+            <template v-slot:activator="{ on, attrs }">
+              <v-icon
+                large
+                color="black"
+                class="mx-2 social"
+                v-bind="attrs"
+                v-on="on"
+                >{{ icon.name }}</v-icon
+              >
+            </template>
+            <span>{{ icon.description }}</span>
+          </v-tooltip>
         </a>
       </div>
 
@@ -71,7 +80,10 @@ export default {
 }
 .social:hover {
   color: rgb(10, 72, 130) !important;
-
   transform: scale(1.4);
+}
+.v-tooltip__content {
+  padding: 2px 7px;
+  margin-top: -3px;
 }
 </style>
