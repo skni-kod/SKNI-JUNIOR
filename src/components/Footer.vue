@@ -12,41 +12,14 @@
         :src="require('../assets/logo_black.svg')"
         class="pr-3 mr-1"
       ></b-img>
-      <a href="https://kod.prz.edu.pl/#/">
-        <b-icon
-          color="black"
-          icon="globe"
-          id="web"
-          class="mx-2 social"
-        ></b-icon>
-        <b-tooltip target="web" triggers="hover"> SKNI KOD </b-tooltip>
-      </a>
-      <a href="https://www.facebook.com/skni.kod">
-        <b-icon
-          icon="facebook"
-          color="black"
-          id="fb"
-          class="mx-2 social"
-        ></b-icon>
-        <b-tooltip target="fb" triggers="hover"> Facebook </b-tooltip>
-      </a>
-      <a href="https://www.linkedin.com/company/skni-kod">
-        <b-icon
-          icon="linkedin"
-          color="black"
-          class="mx-2 social"
-          id="linkedin"
-        ></b-icon>
-        <b-tooltip target="linkedin" triggers="hover"> Linkedin </b-tooltip>
-      </a>
-      <a href="https://www.instagram.com/skni.kod/">
-        <b-icon
-          icon="instagram"
-          color="black"
-          id="instagram"
-          class="mx-2 social"
-        ></b-icon>
-        <b-tooltip target="instagram" triggers="hover"> Instagram </b-tooltip>
+      <a
+        v-for="(icon, i) in icons"
+        :key="i"
+        :href="icon.link"
+        style="text-decoration: none"
+      >
+        <v-icon color="black" class="mx-2 social">{{ icon.name }}</v-icon>
+        <v-tooltip top :target="i" triggers="hover"> {{icon.description }}</v-tooltip>
       </a>
 
       <span class="ml-3" style="border-left: solid 1px black"
@@ -58,6 +31,20 @@
 <script>
 export default {
   name: "Footer",
+  data() {
+    return {
+      icons: [
+        { name: "mdi-web", link: "https://kod.prz.edu.pl/#/", description: "SKNI KOD" },
+        { name: "mdi-facebook", link: "https://www.facebook.com/skni.kod", description: "Facebook" },
+        {
+          name: "mdi-linkedin",
+          link: "https://www.linkedin.com/company/skni-kod",
+          description: "Linkedin"
+        },
+        { name: "mdi-instagram", link: "https://www.instagram.com/skni.kod/", description: "Instagram" },
+      ],
+    };
+  },
 };
 </script>
 
@@ -70,8 +57,5 @@ export default {
   color: rgb(10, 72, 130) !important;
 
   transform: scale(1.5);
-}
-a {
-  text-decoration: none;
 }
 </style>
