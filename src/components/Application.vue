@@ -33,6 +33,7 @@
             active
             pill
             class="mt-0 p-3 mb-5"
+            target="_blank"
             style="background: rgb(10, 72, 130); cursor: pointer; font-size: 1.65rem"
             href="https://kod.prz.edu.pl/joinjunior/"
             >Aplikuj!</b-button
