@@ -1,17 +1,27 @@
 <template>
-  <v-row
-    no-gutters
-    class="justify-center text-center text-white py-12 my-12 mr-12"
+  <div
+    :style="
+      'background:linear-gradient(90deg,rgb(255, 255, 255, 0) 0%,rgba(10, 72, 130, 0.6) 0%), url(' +
+        require('../assets/section_bg.png') +
+        ');background-repeat:no-repeat;background-size:cover;'
+    "
   >
-    <v-col cols="12" v-for="(t, i) in text" :key="i">
-      <p class="pt-5 mb-2 h1">{{ t.question }}</p>
-      <ul style="list-style-type: none" class="h3 pb-10">
-        <li v-for="(answer, id) in t.answers" :key="id" class="mb-1">
-          {{ answer }}
-        </li>
-      </ul>
-    </v-col>
-  </v-row>
+    <v-row
+      no-gutters
+      class="justify-center text-center text-white py-12 mx-auto"
+    >
+      <v-col cols="auto" v-for="(t, i) in text" :key="i">
+        <p class="pt-5 mb-2 h1">
+          {{ t.question }}
+        </p>
+        <ul style="list-style-type: none" class="h3 pl-0 mx-5">
+          <li v-for="(answer, id) in t.answers" :key="id" class="mb-4 justify-center">
+            {{ answer }}
+          </li>
+        </ul>
+      </v-col>
+    </v-row>
+  </div>
 </template>
 
 <script>
@@ -32,8 +42,8 @@ export default {
           question: "Co zyskujesz?",
           answers: [
             "Pomoc mentorów",
-            "Pierwsze profesjonalne doświadczenie w branży IT",
             "Nowe znajomości",
+            "Pierwsze profesjonalne doświadczenie w branży IT",
             "Patronat największych firm na rynku",
           ],
         },

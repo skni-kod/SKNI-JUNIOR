@@ -2,7 +2,7 @@
   <section style="padding-top: 100px">
     <div v-if="$vuetify.breakpoint.xlOnly">
       <v-row no-gutters class="align-center justify-center text-center" style="margin: 0px 100px">
-        <v-col cols="5" class="mx-16">
+        <v-col cols="4" class="mx-16">
           <v-img
             fluid
             :src="require('@/assets/coding.jpg')"
@@ -10,14 +10,14 @@
             class="d-flex justify-center rounded py-5 my-2"
           ></v-img>
         </v-col>
-        <v-col cols="5" class="accent h5 px-4 pt-5 pb-2 mb-0 mx-16 text-center rounded-xl">
+        <v-col cols="4" class="accent h5 px-4 pt-5 pb-2 mb-0 mx-16 text-center rounded-xl">
           <p>{{ text_skni }}</p>
           <p>{{ text_app }}</p>
         </v-col>
       </v-row>
     </div>
-    <div v-else-if="$vuetify.breakpoint.mdAndUp">
-      <v-row no-gutters class="text-justify mx-10 align-center">
+    <div v-else-if="$vuetify.breakpoint.mdAndUp" style="margin: auto">
+      <v-row class="text-justify mx-10 align-center">
         <v-col
           cols="auto"
           class="accent h5 px-4 pt-5 pb-2 mb-3 text-center rounded-xl"
@@ -28,11 +28,11 @@
           <v-img
             fluid
             :src="require('@/assets/coding.jpg')"
-            style="width: 42vw; max-height: 400px; filter: drop-shadow(3px 3px 3px BurlyWood)"
+            style="width: 42vw; max-height: 400px; max-width: 600px; margin: auto; filter: drop-shadow(3px 3px 3px BurlyWood)"
             class="d-flex justify-center rounded py-5 my-4"
           ></v-img>
         </v-col>
-        <v-col class="accent h5 px-4 pt-5 pb-2 mb-0 text-center rounded-xl">
+        <v-col class="accent h5 px-4 pt-5 pb-2 my-6 mx-7 text-center rounded-xl">
           <p>{{ text_app }}</p>
         </v-col>
       </v-row>
