@@ -4,7 +4,7 @@
     dark
     color="primary"
     id="nav"
-    style="position: sticky; top:0; left: 0; z-index: 1"
+    style="position: sticky; top:0; left: 0; z-index: 1;"
   >
     <v-row align="center">
       <v-toolbar-title class="ml-4 d-none d-md-flex">

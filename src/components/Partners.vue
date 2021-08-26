@@ -7,6 +7,7 @@
       height="auto"
       hide-delimiters
       show-arrows-on-hover
+      style="max-width: 1750px; margin: auto"
     >
       <div v-if="$vuetify.breakpoint.mdAndUp">
         <v-carousel-item
@@ -27,9 +28,9 @@
               <v-img
                 :src="items[i * 4 + j - 5].src"
                 :alt="items[i * 4 + j - 5].alt"
-                class="mx-auto"
                 @click.native="open(items[i * 4 + j - 5].link)"
-                style="cursor: pointer; max-width: 220px"
+                class="mx-auto"
+                style="cursor: pointer; max-width: 350px"
               />
             </v-col>
           </v-row>
@@ -40,7 +41,7 @@
           v-for="(item, index) in items"
           :key="index"
           @click.native="open(item.link)"
-          style="cursor: pointer"
+          style="cursor: pointer; max-width: 500px; margin:auto;"
         >
           <v-row align="center" justify="center" class="px-4 fill-height">
             <v-col cols="auto">
@@ -77,6 +78,12 @@ export default {
           alt: "FABRITY",
           text: "FABRITY",
           link: "https://fabrity.com/",
+        },
+        {
+          src: require("@/assets/sponsorzy/ideo.png"),
+          alt: "IDEO",
+          text: "IDEO",
+          link: "https://www.ideo.pl/",
         },
       ],
     };

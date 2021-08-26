@@ -10,14 +10,19 @@
     </v-card>
 
     <v-row class="mx-2">
-      <v-col v-for="(mentor, i) in mentors" :key="i">
-        <v-card class="col-12 outline rounded-lg" color="info">
+      <v-col
+        class="mx-auto"
+        v-for="(mentor, i) in mentors"
+        :key="i"
+        style="max-width: 900px"
+      >
+        <v-card class="info col-12 outline rounded-lg mx-2">
           <div data-aos="zoom-in">
             <div class="d-flex justify-center mb-3">
               <img
                 :src="mentor.jpg"
                 class="img-fluid"
-                style="width: 20vw; min-width: 180px; height: auto;"
+                style="width: 18vw; min-width: 140px; max-width: 280px; height: auto;"
               />
             </div>
             <div>

@@ -6,7 +6,7 @@
     <div class="mx-10">
       <div
         class="accent rounded-pill p-5"
-        style="max-width: 1300px; margin:auto"
+        style="max-width: 1500px; margin:auto"
       >
         <v-row no-gutters class=" text-center" justify="center">
           <div
