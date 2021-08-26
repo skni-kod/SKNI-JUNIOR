@@ -41,11 +41,11 @@
           v-for="(item, index) in items"
           :key="index"
           @click.native="open(item.link)"
-          style="cursor: pointer; max-width: 500px; margin:auto;"
+          style="margin:auto;"
         >
           <v-row align="center" justify="center" class="px-4 fill-height">
             <v-col cols="auto">
-              <v-img :src="item.src" :alt="item.alt" />
+              <v-img :src="item.src" :alt="item.alt" style="cursor: pointer; max-width: 620px" />
             </v-col>
           </v-row>
         </v-carousel-item>
