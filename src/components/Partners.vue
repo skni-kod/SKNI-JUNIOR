@@ -28,6 +28,7 @@
                 :src="items[i * 4 + j - 5].src"
                 :alt="items[i * 4 + j - 5].alt"
                 class="mx-auto"
+                @click.native="open(items[i * 4 + j - 5].link)"
                 style="cursor: pointer; max-width: 220px"
               />
             </v-col>
@@ -38,6 +39,7 @@
         <v-carousel-item
           v-for="(item, index) in items"
           :key="index"
+          @click.native="open(item.link)"
           style="cursor: pointer"
         >
           <v-row align="center" justify="center" class="px-4 fill-height">
@@ -62,19 +64,27 @@ export default {
           src: require("@/assets/sponsorzy/ideo.png"),
           alt: "IDEO",
           text: "IDEO",
+          link: "https://www.ideo.pl/",
         },
         {
-          src: require("@/assets/sponsorzy/prz.jpg"),
+          src: require("@/assets/sponsorzy/prz.png"),
           alt: "PRZ",
           text: "PRZ",
+          link: "https://w.prz.edu.pl/",
         },
         {
           src: require("@/assets/sponsorzy/fabrity.png"),
           alt: "FABRITY",
           text: "FABRITY",
+          link: "https://fabrity.com/",
         },
       ],
     };
+  },
+  methods: {
+    open(link) {
+      window.open(link, "_blank");
+    },
   },
 };
 </script>
