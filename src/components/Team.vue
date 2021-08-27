@@ -68,7 +68,7 @@ export default {
         {
           name: "Oskar Tyniec",
           position: "CEO",
-          jpg: require("@/assets/mentorzy/team-3.jpg"),
+          jpg: require("@/assets/mentorzy/Oskar.jpg"),
           description:
             'Pasjonat metodyk zwinnych, certyfikowany Scrum Master, koordynator projektów oraz osoba odpowiedzialna za PR Studenckiego Koła Naukowego Informatyków "KOD".',
           git: "https://github.com/Rakso12",
@@ -76,9 +76,19 @@ export default {
           active: true,
         },
         {
+          name: "Patrycja Cyrul",
+          position: "Pixel Art Designer",
+          jpg: require("@/assets/mentorzy/Patrycja.jpg"),
+          description:
+            'Absolwentka Zarządzania projektami, miłośniczka content marketingu oraz pisania. Prowadząca fanpage SKNI KOD.',
+          git: "",
+          link: "/",
+          active: true,
+        },
+        {
           name: "Mateusz Fesz",
           position: "Low-Level Programmer",
-          jpg: require("@/assets/mentorzy/team-3.jpg"),
+          jpg: require("@/assets/mentorzy/Mateusz.jpg"),
           description:
             "Absolwent Zespołu Szkół Technicznych i Ogólnokształcących w Krośnie, interesuje się głównie programowaniem niskopoziomowym. Członek m.in zespołu rozwijającego system operacyjny MicrOS, a także pasjonat języka programowania RUST. W wolnym czasie bawi się arduino i szkoli swoje techniki kulinarne.",
           git: "https://github.com/MatiF100",
@@ -88,7 +98,7 @@ export default {
         {
           name: "Kacper Maciołek",
           position: "Game Developer",
-          jpg: require("@/assets/mentorzy/team-3.jpg"),
+          jpg: require("@/assets/mentorzy/Kacper.jpg"),
           description:
             'Absolwent Zespołu Szkół Technicznych w Mielcu. Lider zespołu tworzącego grę Roguelike w SKNI "KOD". W wolnym czasie zacięty gracz Football Managera.',
           git: "https://github.com/Kacperacy",
@@ -98,9 +108,8 @@ export default {
         {
           name: "Adrian Malec",
           position: "Frontend Developer",
-          jpg: require("@/assets/mentorzy/team-3.jpg"),
-          description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          jpg: require("@/assets/mentorzy/Adrian.jpg"),
+          description: "Absolwent Regionalnego Centrum Edukacji Zawodowej w Biłgoraju, udziela się w projektach związanych z web developingiem oraz game devem, lubi dobrą fabułę zarówno w grach jak i książkach.",
           git: "https://github.com/f10k1",
           link: " https://www.linkedin.com/in/adrian-malec-a252321a1/",
           active: true,
@@ -108,9 +117,9 @@ export default {
         {
           name: "Maciek Pietrasz",
           position: "Pixel Art Designer",
-          jpg: require("@/assets/mentorzy/team-3.jpg"),
+          jpg: require("@/assets/mentorzy/Maciek.jpg"),
           description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            'Współtwórca projektu i osoba odpowiedzialna za tworzenia grafiki w projekcie "Roguelike". Miłośnik książek o tematyce fantasy. Planujacy swoje działania realista. Ambitny i wytrwały w wyznaczonych celach.',
           git: "https://github.com/Komosabe",
           link: "/",
           active: true,
