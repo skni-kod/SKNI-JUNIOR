@@ -14,7 +14,7 @@
     <div ref="3" style="padding-top: 120px">
       <partners />
     </div>
-    <div ref="4" style="padding-top: 100px">
+    <div ref="4" style="padding-top: 120px">
       <faq />
     </div>
   </div>

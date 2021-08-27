@@ -4,10 +4,10 @@
     dark
     color="primary"
     id="nav"
-    style="position: sticky; top:0; left: 0; width: 100%; z-index: 1;"
+    style="position: sticky; top:0; left: 0; width: 100%; z-index: 20;"
   >
     <v-row align="center">
-      <v-toolbar-title class="pl-2 d-none d-md-flex">
+      <v-toolbar-title class="pl-5 d-none d-md-flex">
         <img
           :src="require('@/assets/logaSKNI-KOD/logoJunior.png')"
           class="img-fluid"
