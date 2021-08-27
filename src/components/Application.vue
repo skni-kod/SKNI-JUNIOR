@@ -16,7 +16,7 @@
             style="display: inline-block"
           >
             <div style="display: inline-block; vertical-align: middle">
-              <v-icon size="8vw" color="primary">{{ icon.name }}</v-icon>
+              <v-icon size="6.5vw" color="primary">{{ icon.name }}</v-icon>
               <h5>{{ icon.description }}</h5>
             </div>
             <div style="display: inline-block; vertical-align: middle">
