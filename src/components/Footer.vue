@@ -1,28 +1,42 @@
 <template>
-  <div style="background: rgba(10, 72, 130, 0.2)">
+  <div style="background: rgba(10, 72, 130, 0.2); padding-bottom: 30px">
     <b-row
       no-gutters
       align-h="center"
-      class="p-5 lead text-center"
+      class="p-5 lead text-center mt-4"
       align-v="center"
     >
-      <b-img
-        fluid
-        style="height: 40px; border-right: 1px solid black"
-        :src="require('../assets/logo_black.svg')"
-        class="pr-2"
-      ></b-img>
-      <b-icon icon="globe" id="web" class="mx-2 social"></b-icon>
-      <b-tooltip target="web" triggers="hover"> SKNI KOD </b-tooltip>
-      <b-icon icon="facebook" id="fb" class="mx-2 social"></b-icon>
-      <b-tooltip target="fb" triggers="hover"> Facebook </b-tooltip>
-      <b-icon icon="linkedin" class="mx-2 social" id="linkedin"></b-icon>
-      <b-tooltip target="linkedin" triggers="hover"> Linkedin </b-tooltip>
-      <b-icon icon="instagram" id="instagram" class="mx-2 social"></b-icon>
-      <b-tooltip target="instagram" triggers="hover"> Instagram </b-tooltip>
+      <div class="mt-8">
+        <b-img
+          fluid
+          style="height: 40px; border-right: 1px solid black"
+          :src="require('../assets/logo_black.svg')"
+          class="pr-4 mr-1"
+        ></b-img>
+        <a
+          v-for="(icon, i) in icons"
+          :key="i"
+          :href="icon.link"
+          style="text-decoration: none"
+        >
+          <v-tooltip top>
+            <template v-slot:activator="{ on, attrs }">
+              <v-icon
+                large
+                color="black"
+                class="mx-2 social"
+                v-bind="attrs"
+                v-on="on"
+                >{{ icon.name }}</v-icon
+              >
+            </template>
+            <span>{{ icon.description }}</span>
+          </v-tooltip>
+        </a>
+      </div>
 
-      <span class="pl-2" style="border-left: solid 1px black"
-        >Kontakt <br /><i class="h6"> sknikodprz@gmail.com</i></span
+      <span class="ml-3 mt-8" style="border-left: solid 1px black"
+        >Kontakt <br /><i class="h6 pl-4"> sknikodprz@gmail.com</i></span
       >
     </b-row>
   </div>
@@ -30,6 +44,32 @@
 <script>
 export default {
   name: "Footer",
+  data() {
+    return {
+      icons: [
+        {
+          name: "mdi-web",
+          link: "https://kod.prz.edu.pl/#/",
+          description: "SKNI KOD",
+        },
+        {
+          name: "mdi-facebook",
+          link: "https://www.facebook.com/skni.kod",
+          description: "Facebook",
+        },
+        {
+          name: "mdi-linkedin",
+          link: "https://www.linkedin.com/company/skni-kod",
+          description: "Linkedin",
+        },
+        {
+          name: "mdi-instagram",
+          link: "https://www.instagram.com/skni.kod/",
+          description: "Instagram",
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -40,7 +80,10 @@ export default {
 }
 .social:hover {
   color: rgb(10, 72, 130) !important;
-
-  transform: scale(1.5);
+  transform: scale(1.4);
+}
+.v-tooltip__content {
+  padding: 2px 7px;
+  margin-top: -3px;
 }
 </style>

@@ -1,62 +1,52 @@
 <template>
-  <div>
-    <b-navbar
-      toggleable="lg"
-      :type="nav_type"
-      fixed="top"
-      :style="nav_variant"
-    >
-      <b-navbar-toggle target="nav-collapse" class='ml-auto'></b-navbar-toggle>
+  <v-toolbar
+    height="110px"
+    dark
+    color="primary"
+    id="nav"
+    style="position: sticky; top:0; left: 0; width: 100%; z-index: 20;"
+  >
+    <v-row align="center">
+      <v-toolbar-title class="pl-5 d-none d-md-flex">
+        <img
+          :src="require('@/assets/logaSKNI-KOD/logoJunior.png')"
+          class="img-fluid"
+          style="height: 95px"
+        />
+      </v-toolbar-title>
 
-      <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav class="ml-auto h5">
-          <b-nav-item
-            class="px-5"
-            v-for="item in items"
-            :key="item.name"
-            :to="item.link"
-            :active="$route.path == item.link"
-            ><b-icon :icon="item.icon"></b-icon> {{ item.name }}</b-nav-item
-          >
-          <b-nav-item-dropdown text=" Dołącz do nas" no-caret>
-            <template slot="button-content">
-              <b-icon icon="person-plus"></b-icon>
-              Dołącz do nas
-            </template>
-            <b-dropdown-item href="#">Uczestnik</b-dropdown-item>
-            <b-dropdown-item href="#">Mentor</b-dropdown-item>
-            <b-dropdown-item href="#">Partner</b-dropdown-item>
-          </b-nav-item-dropdown>
-        </b-navbar-nav>
-      </b-collapse>
-    </b-navbar>
-  </div>
+      <v-spacer></v-spacer>
+      <v-btn
+        text
+        v-for="(item, i) in items"
+        :key="item.key"
+        class="mr-4 transparent rounded-pill white--text"
+        @click="emit(i)"
+      >
+        {{ item.name }}
+      </v-btn>
+    </v-row>
+  </v-toolbar>
 </template>
 
 <script>
 export default {
-  name: "Navbar",
-  data: function () {
+  data() {
     return {
-      nav_variant: "",
-      nav_type:'light',
+      active: false,
       items: [
         { key: "home", link: "/", icon: "house", name: "O programie" },
         { key: "mentors", link: "/mentors", icon: "person", name: "Mentorzy" },
-        { key: "home", link: "/projects", icon: "book", name: "Projekty" },
+        { key: "application", link: "/", icon: "", name: "Rekrutacja" },
+        { key: "partners", link: "/", icon: "", name: "Partnerzy" },
+        { key: "faq", link: "/", icon: "", name: "FAQ" },
       ],
     };
   },
-  created() {
-    document.addEventListener("scroll", () => {
-      if (window.scrollY != 0) {
-        this.$data.nav_variant = "background:rgb(10, 72, 130)";
-        this.$data.nav_type = 'dark';
-      } else {
-        this.$data.nav_variant = "";
-        this.$data.nav_type = "light";
-      }
-    });
+  methods: {
+    emit(i) {
+      this.$emit("go-to", i);
+    },
   },
 };
 </script>

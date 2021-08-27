@@ -1,13 +1,10 @@
 <template>
   <div>
     <b-row no-gutters class="d-flex flex-column" style="height: 100%">
-      <div
-        class="half d-flex justify-content-center align-items-center"
-        ref="parallax"
-      >
+      <div class="half d-flex align-items-center" ref="parallax">
         <p>SKNI</p>
       </div>
-      <div class="half d-flex justify-content-center align-items-center">
+      <div class="half d-flex align-items-center">
         <p>JUNIOR</p>
         <p
           style="
@@ -19,10 +16,9 @@
             overflow: hidden;
             align-items: center;
             cursor: pointer;
-            background: white;
             font-size: 20px;
             font-weight: bold;
-            width: 60%;
+            width: 100%;
             color: rgb(10, 72, 130);
           "
         >
@@ -32,7 +28,7 @@
             alt="lol"
             @click="gotoSKNI"
             :src="require('@/assets/logo_color.png')"
-            style="max-width: 300px"
+            style="max-width: 285px"
           ></b-img>
         </p>
         <b-icon
@@ -59,7 +55,7 @@ export default {
       document.location.href = "https://kod.prz.edu.pl/#/";
     },
     emit() {
-      this.$emit("clicked",'about');
+      this.$emit("clicked", "about");
     },
   },
   mounted() {
@@ -71,9 +67,8 @@ export default {
       let _h = window.innerHeight / 2;
       let _mouseX = e.clientX;
       let _mouseY = e.clientY;
-      let _depth3 = `${50 - (_mouseX - _w) * 0.04}% ${
-        50 - (_mouseY - _h) * 0.04
-      }%`;
+      let _depth3 = `${50 - (_mouseX - _w) * 0.04}% ${50 -
+        (_mouseY - _h) * 0.04}%`;
       let x = `${_depth3}`;
       elem.style.backgroundPosition = x;
     }
@@ -102,14 +97,12 @@ div.half:nth-child(1) {
   background-position: right;
   background-blend-mode: hard-light;
   overflow: hidden;
-  font-size: 150px;
+  font-size: 130px;
   color: rgb(10, 72, 130);
 }
 div.half:nth-child(1) p {
   position: relative;
   width: 100%;
-  display: flex;
-  justify-content: center;
   overflow: hidden;
 }
 div.half:nth-child(1) p::before {
@@ -117,27 +110,27 @@ div.half:nth-child(1) p::before {
   height: 100%;
   position: absolute;
   box-shadow: inset 0 0 500px rgba(255, 255, 255, 0.9);
-  width: 100%;
+  width: 80%;
   z-index: -1;
 }
 
 div.half:nth-child(2) {
   overflow: hidden;
   position: absolute;
-  left: 40%;
+  left: 50%;
   height: 100%;
   display: flex;
   width: 60%;
-  font-size: 150px;
+  font-size: 130px;
 }
 
 div.half:nth-child(2) p {
   position: relative;
   width: 100%;
   display: flex;
-  justify-content: center;
+  margin-left: 5vw;
   overflow: hidden;
-  color: white;
+  color: rgba(10, 72, 130, 0.9);
 }
 div.half:nth-child(2) p::before {
   content: "";
