@@ -13,7 +13,7 @@
       <v-col
         v-for="(mentor, i) in mentors"
         :key="i"
-        style="max-width: 900px; min-width: 335px; margin-left:auto; margin-right:auto;"
+        style="max-width: 700px; margin-left:auto; margin-right:auto;"
       >
         <v-card class="info col-12 outline rounded-lg">
           <div data-aos="zoom-in">
@@ -21,7 +21,7 @@
               <img
                 :src="mentor.jpg"
                 class="img-fluid"
-                style="width: 15vw; min-width: 150px; max-width: 250px; height: auto;"
+                style="width: 15vw; min-width: 100px; max-width: 250px; height: auto;"
               />
             </div>
             <div>

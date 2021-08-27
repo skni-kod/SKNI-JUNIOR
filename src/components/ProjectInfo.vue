@@ -1,5 +1,5 @@
 <template>
-  <section style="padding-top: 100px">
+  <section>
     <div v-if="$vuetify.breakpoint.xlOnly">
       <v-row no-gutters class="align-center justify-center text-center" style="margin: 0px 100px">
         <v-col cols="4" class="mx-16">

@@ -1,17 +1,17 @@
 <template>
   <v-toolbar
-    height="90px"
+    height="110px"
     dark
     color="primary"
     id="nav"
-    style="position: sticky; top:0; left: 0; z-index: 1;"
+    style="position: sticky; top:0; left: 0; width: 100%; z-index: 1;"
   >
     <v-row align="center">
-      <v-toolbar-title class="ml-4 d-none d-md-flex">
+      <v-toolbar-title class="pl-2 d-none d-md-flex">
         <img
           :src="require('@/assets/logaSKNI-KOD/logoJunior.png')"
           class="img-fluid"
-          style="height: 75px"
+          style="height: 95px"
         />
       </v-toolbar-title>
 
@@ -20,7 +20,7 @@
         text
         v-for="(item, i) in items"
         :key="item.key"
-        class="mr-4 transparent rounded-pill px-4 white--text"
+        class="mr-4 transparent rounded-pill white--text"
         @click="emit(i)"
       >
         {{ item.name }}

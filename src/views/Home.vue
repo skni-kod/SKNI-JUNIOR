@@ -3,15 +3,15 @@
     <baner @clicked="lol" />
     <Navbar @go-to="scrolling"></Navbar>
     <div ref="0">
-      <project-info />
+      <project-info style="padding-top: 120px" />
     </div>
-    <div ref="1" style="padding-top: 100px">
+    <div ref="1" style="padding-top: 120px">
       <team />
     </div>
-    <div ref="2" style="padding-top: 100px">
+    <div ref="2" style="padding-top: 120px">
       <application />
     </div>
-    <div ref="3" style="padding-top: 100px">
+    <div ref="3" style="padding-top: 120px">
       <partners />
     </div>
     <div ref="4" style="padding-top: 100px">
