@@ -88,7 +88,7 @@ export default {
   data() {
     return {
       text_skni:
-        "SKNI JUNIOR jest skierowany dla uczniów szkół średnich zainteresowanych szeroko pojętym IT. Po rekrutacji uczestnicy zostaną podzieleni na mniejsze zespoły z indywidualnym mentorem. Następnie zespołowi zostanie przydzielone konkretne zadanie, podczas którego uczestnicy będą zdobywać wiedzę, jak i rozwijać umiejętność współpracy. Nad prawidłowym przebiegiem tego procesu będzie czuwał mentor. Dzięki takiemu modelowi pracy członkowie projektu będą przygotowani do następnych bardziej zaawansowanych projektów w branży IT.",
+        "SKNI JUNIOR jest skierowany do uczniów szkół średnich zainteresowanych szeroko pojętym IT. Po rekrutacji uczestnicy zostaną podzieleni na mniejsze zespoły z indywidualnym mentorem. Następnie zespołowi zostanie przydzielone konkretne zadanie, podczas którego uczestnicy będą zdobywać wiedzę, jak i rozwijać umiejętność współpracy. Nad prawidłowym przebiegiem tego procesu będzie czuwał mentor. Dzięki takiemu modelowi pracy członkowie projektu będą przygotowani do następnych bardziej zaawansowanych projektów w branży IT.",
       text_app:
         "Dzięki szerokiej ofercie uczestnik może wybrać dziedzinę w jakiej chce się rozwijać - m.in. programowanie, tworzenie grafiki czy prowadzenie social mediów jak również marketing i zarządzanie projektami. Ponadto członek SKNI Junior może również brać udział w szkoleniach organizowanych przez koło naukowe, czy konferencjach i hackathonach.",
       text_end:
