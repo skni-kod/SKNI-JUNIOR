@@ -11,10 +11,10 @@
       class="justify-center text-center text-white py-12 mx-auto"
     >
       <v-col cols="auto" v-for="(t, i) in text" :key="i">
-        <p class="pt-5 mb-2 h1">
+        <p class="pt-5 mb-9 h1">
           {{ t.question }}
         </p>
-        <ul style="list-style-type: none" class="h3 pl-0 mx-5">
+        <ul style="list-style-type: none" class="h3 pl-0 mb-12 mx-5">
           <li v-for="(answer, id) in t.answers" :key="id" class="mb-4 justify-center">
             {{ answer }}
           </li>
