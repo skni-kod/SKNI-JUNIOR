@@ -11,11 +11,16 @@
 
     <v-row class="mx-1">
       <v-col
+        xl="4"
+        xs="5"
         v-for="(mentor, i) in mentors"
         :key="i"
-        style="max-width: 700px; margin-left:auto; margin-right:auto;"
+        style="margin-left:auto; margin-right:auto; padding: 20px 1.8vw;"
       >
-        <v-card class="info col-12 outline rounded-lg">
+        <v-card
+          class="info col-12 outline rounded-lg"
+          style="min-width: 28vw;"
+        >
           <div data-aos="zoom-in">
             <div class="d-flex justify-center mb-3">
               <img
@@ -82,7 +87,7 @@ export default {
           position: "Copywriter",
           jpg: require("@/assets/mentorzy/Patrycja.jpg"),
           description:
-            'Absolwentka Zarządzania projektami, miłośniczka content marketingu oraz pisania. Prowadząca fanpage SKNI KOD.',
+            "Absolwentka Zarządzania projektami, miłośniczka content marketingu oraz pisania. Prowadząca fanpage SKNI KOD.",
           git: "",
           link: "https://www.linkedin.com/in/patrycja-cyrul",
           active: false,
@@ -114,7 +119,8 @@ export default {
           name: "Adrian Malec",
           position: "Frontend Developer",
           jpg: require("@/assets/mentorzy/Adrian.jpg"),
-          description: "Absolwent Regionalnego Centrum Edukacji Zawodowej w Biłgoraju, udziela się w projektach związanych z web developingiem oraz game devem, lubi dobrą fabułę zarówno w grach jak i książkach.",
+          description:
+            "Absolwent Regionalnego Centrum Edukacji Zawodowej w Biłgoraju, udziela się w projektach związanych z web developingiem oraz game devem, lubi dobrą fabułę zarówno w grach jak i książkach.",
           git: "https://github.com/f10k1",
           link: " https://www.linkedin.com/in/adrian-malec-a252321a1/",
           active: true,
