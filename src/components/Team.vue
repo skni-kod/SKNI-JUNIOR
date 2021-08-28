@@ -33,6 +33,7 @@
                     icon
                     color="black"
                     @click="open(mentor.git)"
+                    :disabled="!mentor.active"
                     class="text-decoration-none"
                   >
                     <v-icon size="34">mdi-github</v-icon>
@@ -42,7 +43,7 @@
                     color="#0e76a8"
                     @click="open(mentor.link)"
                     class="text-decoration-none"
-                    :disabled="!mentor.active"
+                    :disabled="!mentor.active2"
                     style="margin-right: 0.8vw"
                   >
                     <v-icon size="34">mdi-linkedin</v-icon>
@@ -74,16 +75,18 @@ export default {
           git: "https://github.com/Rakso12",
           link: "https://www.linkedin.com/in/oskartyniec/",
           active: true,
+          active2: true,
         },
         {
           name: "Patrycja Cyrul",
-          position: "Pixel Art Designer",
+          position: "Copywriter",
           jpg: require("@/assets/mentorzy/Patrycja.jpg"),
           description:
             'Absolwentka Zarządzania projektami, miłośniczka content marketingu oraz pisania. Prowadząca fanpage SKNI KOD.',
           git: "",
-          link: "/",
-          active: true,
+          link: "https://www.linkedin.com/in/patrycja-cyrul",
+          active: false,
+          active2: true,
         },
         {
           name: "Mateusz Fesz",
@@ -93,7 +96,8 @@ export default {
             "Absolwent Zespołu Szkół Technicznych i Ogólnokształcących w Krośnie, interesuje się głównie programowaniem niskopoziomowym. Członek m.in zespołu rozwijającego system operacyjny MicrOS, a także pasjonat języka programowania RUST. W wolnym czasie bawi się arduino i szkoli swoje techniki kulinarne.",
           git: "https://github.com/MatiF100",
           link: "",
-          active: false,
+          active: true,
+          active2: false,
         },
         {
           name: "Kacper Maciołek",
@@ -104,6 +108,7 @@ export default {
           git: "https://github.com/Kacperacy",
           link: "https://www.linkedin.com/in/kacper-macio%C5%82ek-577564209/",
           active: true,
+          active2: true,
         },
         {
           name: "Adrian Malec",
@@ -113,6 +118,7 @@ export default {
           git: "https://github.com/f10k1",
           link: " https://www.linkedin.com/in/adrian-malec-a252321a1/",
           active: true,
+          active2: true,
         },
         {
           name: "Maciek Pietrasz",
@@ -123,6 +129,7 @@ export default {
           git: "https://github.com/Komosabe",
           link: "/",
           active: true,
+          active2: false,
         },
       ],
     };
