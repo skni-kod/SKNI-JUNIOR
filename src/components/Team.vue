@@ -74,7 +74,7 @@ export default {
       mentors: [
         {
           name: "Oskar Tyniec",
-          position: "CEO",
+          position: "Project Leader",
           jpg: require("@/assets/mentorzy/Oskar.jpg"),
           description:
             'Pasjonat metodyk zwinnych, certyfikowany Scrum Master, koordynator projektów oraz osoba odpowiedzialna za PR Studenckiego Koła Naukowego Informatyków "KOD".',
