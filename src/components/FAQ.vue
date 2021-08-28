@@ -8,7 +8,7 @@
         <v-expansion-panel
           v-for="(question, i) in questions"
           :key="i"
-          class="primary white--text my-2 rounded-lg"
+          class="primary white--text my-2 rounded-lg text-justify"
           style="max-width: 700px;"
         >
           <v-expansion-panel-header
@@ -19,6 +19,7 @@
           <v-expansion-panel-content
             v-html="question.response"
             class="white black--text py-3 px-5"
+            style="hyphens: auto; overflow-wrap: break-word; word-break: break-word;"
           >
           </v-expansion-panel-content>
         </v-expansion-panel>
@@ -55,7 +56,7 @@ export default {
         {
           name: "Jakie umiejętności zyskuje jako uczestnik projektu?",
           response:
-            "Uczestnicy mogą nabyć umiejętności takie jak programowanie w wielu językach, umiejętności miękkie, zapoznanie z metodykami zarządzania projektami, doświadczeni w prowadzeniu social mediów jak również zarządzanie grupą czy pracy w grupie i wiele wiele innych.",
+            "Uczestnicy mogą nabyć umiejętności takie jak programowanie w wielu językach, umiejętności miękkie, zapoznanie z metodykami zarządzania projektami, doświadczenie w prowadzeniu social mediów jak również zarządzanie grupą czy pracy w grupie i wiele wiele innych.",
         },
       ],
     };
