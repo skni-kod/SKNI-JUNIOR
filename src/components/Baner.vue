@@ -11,7 +11,7 @@
       </div>
       <div class="half d-flex align-items-center">
         <p>JUNIOR</p>
-        <p class="logo">
+        <p class="font-weight-bold logo">
           STWORZONE PRZEZ
           <b-img
             fluid
@@ -180,7 +180,6 @@ div.half:nth-child(2) p.logo {
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  font-weight: bold;
   width: 100%;
   color: rgb(10, 72, 130);
   font-size: 15px;

@@ -18,6 +18,7 @@
         style="margin-left:auto; margin-right:auto; padding: 20px 1.8vw;"
       >
         <v-card
+          height="100%"
           class="info col-12 outline rounded-lg"
           style="min-width: 28vw;"
         >
@@ -55,7 +56,7 @@
                   </v-btn>
                 </v-col>
               </div>
-              <p>
+              <p class="text-justify" style="hyphens: auto; overflow-wrap: break-word; word-break: break-word;">
                 {{ mentor.description }}
               </p>
             </div>
@@ -98,8 +99,8 @@ export default {
           position: "Low-Level Programmer",
           jpg: require("@/assets/mentorzy/Mateusz.jpg"),
           description:
-            "Absolwent Zespołu Szkół Technicznych i Ogólnokształcących w Krośnie, interesuje się głównie programowaniem niskopoziomowym. Członek m.in zespołu rozwijającego system operacyjny MicrOS, a także pasjonat języka programowania RUST. W wolnym czasie bawi się arduino i szkoli swoje techniki kulinarne.",
-          git: "https://github.com/MatiF100",
+            "Absolwent ZSTiO w Krośnie. Główny kierunek zainteresowań to programowanie niskopoziomowe. Członek m.in. zespołu rozwijającego system operacyjny MicrOS, a także pasjonat języka programowania RUST. W wolnym czasie zajmuje się Arduino i szkoli swoje techniki kulinarne.",
+            git: "https://github.com/MatiF100",
           link: "",
           active: true,
           active2: false,
