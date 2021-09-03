@@ -56,8 +56,7 @@
                   </v-btn>
                 </v-col>
               </div>
-              <p class="text-justify" style="hyphens: auto; overflow-wrap: break-word; word-break: break-word;">
-                {{ mentor.description }}
+              <p class="text-justify" style="hyphens: auto; overflow-wrap: break-word; word-break: break-word;" v-html="mentor.description">
               </p>
             </div>
           </div>
@@ -123,9 +122,20 @@ export default {
           description:
             "Absolwent Regionalnego Centrum Edukacji Zawodowej w Biłgoraju, udziela się w projektach związanych z web developingiem oraz game devem, lubi dobrą fabułę zarówno w grach jak i książkach.",
           git: "https://github.com/f10k1",
-          link: " https://www.linkedin.com/in/adrian-malec-a252321a1/",
+          link: "https://www.linkedin.com/in/adrian-malec-a252321a1/",
           active: true,
           active2: true,
+        },
+        {
+          name: "Igor Moryto",
+          position: "3D Artist",
+          jpg: require("@/assets/mentorzy/Igor.png"),
+          description:
+            "Absolwent Zespołu Szkół Technicznych w Mielcu. Pasjonat tworzenia gier komputerowych, w sczególności od strony graficznej i game designu. Regularny uczestnik game jamów. <br> Moje prace: <a href='https://www.artstation.com/ezykill' target='_blank'>ArtStation</a> i <a href='https://ezykill.itch.io/flapybat' target='_blank'>Flapy Bat</a>",
+          git: "",
+          link: "",
+          active: false,
+          active2: false,
         },
         {
           name: "Maciek Pietrasz",
