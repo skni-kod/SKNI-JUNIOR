@@ -13,14 +13,14 @@
         >
           <v-expansion-panel-header
             style="font-size: 18.5px"
-            class="py-3 my-0"
+            class="my-0"
             >{{ question.name }}</v-expansion-panel-header
           >
           <v-expansion-panel-content
-            v-html="question.response"
-            class="white black--text py-3 px-5"
-            style="hyphens: auto; overflow-wrap: break-word; word-break: break-word;"
+            class="white black--text pt-4"
+            style="hyphens: auto; overflow-wrap: break-word; word-break: break-word; align: center"
           >
+          <p class="h6 mb-0" v-html="question.response"></p>
           </v-expansion-panel-content>
         </v-expansion-panel>
       </v-expansion-panels>
