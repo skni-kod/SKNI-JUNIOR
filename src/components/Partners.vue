@@ -62,6 +62,12 @@ export default {
       cycleTime: 5000,
       items: [
         {
+          src: require("@/assets/sponsorzy/prz.png"),
+          alt: "PRZ",
+          text: "PRZ",
+          link: "https://w.prz.edu.pl/",
+        },
+        {
           src: require('@/assets/logaSKNI-KOD/logo_color.png'),
           alt: "SKNI KOD",
           text: "SKNI KOD",
@@ -78,12 +84,6 @@ export default {
           alt: "FABRITY",
           text: "FABRITY",
           link: "https://fabrity.com/",
-        },
-        {
-          src: require("@/assets/sponsorzy/prz.png"),
-          alt: "PRZ",
-          text: "PRZ",
-          link: "https://w.prz.edu.pl/",
         },
       ],
     };
