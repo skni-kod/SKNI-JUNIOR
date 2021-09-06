@@ -17,7 +17,7 @@
     <div ref="4" style="padding-top: 120px">
       <faq />
     </div>
-    <div ref="5" style="padding-top: 120px">
+    <div ref="5" style="padding-top: 120px; padding-bottom: 30px">
       <documents />
     </div>
   </div>
