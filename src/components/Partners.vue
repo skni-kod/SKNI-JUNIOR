@@ -1,6 +1,6 @@
 <template>
-  <v-card class="info ma-2" flat>
-    <v-col cols="auto"><p class="h1 text-center mt-6">Partnerzy</p></v-col>
+  <v-card class="info mx-2" flat>
+    <v-col cols="auto"><p class="h1 text-center">Partnerzy</p></v-col>
     <v-carousel
       :cycle="cycle"
       :interval="cycleTime"

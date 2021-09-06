@@ -50,15 +50,25 @@
                     @click="open(mentor.link)"
                     class="text-decoration-none"
                     :disabled="!mentor.active2"
-                    style="margin-right: 0.8vw"
                   >
-                    <v-icon size="34">mdi-linkedin</v-icon>
+                    <v-icon size="32">mdi-linkedin</v-icon>
+                  </v-btn>
+                  <v-btn
+                    v-if="mentor.name === 'Igor Moryto'"
+                    icon
+                    color="black"
+                    @click="open(mentor.art)"
+                    class="text-decoration-none"
+                  >
+                    <v-icon size="30" class="m-0 p-0">mdi-nintendo-game-boy</v-icon>
                   </v-btn>
                 </v-col>
               </div>
-              <p class="text-justify" style="hyphens: auto; overflow-wrap: break-word; word-break: break-word;">
-                {{ mentor.description }}
-              </p>
+              <p
+                class="text-justify"
+                style="hyphens: auto; overflow-wrap: break-word; word-break: break-word;"
+                v-html="mentor.description"
+              ></p>
             </div>
           </div>
         </v-card>
@@ -84,6 +94,17 @@ export default {
           active2: true,
         },
         {
+          name: "Jakub Szatkowski",
+          position: "Software Engineer",
+          jpg: require("@/assets/mentorzy/Jakub.jpg"),
+          description:
+            "Absolwent Informatyki na Politechnice Rzeszowkiej oraz ZS3 w Sanoku. Posiada bardzo szerokie zainteresowania, jednak najważniejszy kierunek to programowanie niskopoziomowe. W wolnym czasie miłośnik dobrej kuchni i sportu. Stack technologiczny to:<br>C, Assembler x86, Python, Java.",
+          git: "https://github.com/SzateX",
+          link: "https://www.linkedin.com/in/jakub-szatkowski-21ba501b6/",
+          active: true,
+          active2: true,
+        },
+        {
           name: "Patrycja Cyrul",
           position: "Copywriter",
           jpg: require("@/assets/mentorzy/Patrycja.jpg"),
@@ -95,15 +116,15 @@ export default {
           active2: true,
         },
         {
-          name: "Mateusz Fesz",
-          position: "Low-Level Programmer",
-          jpg: require("@/assets/mentorzy/Mateusz.jpg"),
+          name: "Adrian Malec",
+          position: "Frontend Developer",
+          jpg: require("@/assets/mentorzy/Adrian.jpg"),
           description:
-            "Absolwent ZSTiO w Krośnie. Główny kierunek zainteresowań to programowanie niskopoziomowe. Członek m.in. zespołu rozwijającego system operacyjny MicrOS, a także pasjonat języka programowania RUST. W wolnym czasie zajmuje się Arduino i szkoli swoje techniki kulinarne.",
-            git: "https://github.com/MatiF100",
-          link: "",
+            "Absolwent Regionalnego Centrum Edukacji Zawodowej w Biłgoraju, udziela się w projektach związanych z web developingiem oraz game devem, lubi dobrą fabułę zarówno w grach jak i książkach.",
+          git: "https://github.com/f10k1",
+          link: "https://www.linkedin.com/in/adrian-malec-a252321a1/",
           active: true,
-          active2: false,
+          active2: true,
         },
         {
           name: "Kacper Maciołek",
@@ -117,15 +138,16 @@ export default {
           active2: true,
         },
         {
-          name: "Adrian Malec",
-          position: "Frontend Developer",
-          jpg: require("@/assets/mentorzy/Adrian.jpg"),
+          name: "Igor Moryto",
+          position: "3D Artist",
+          jpg: require("@/assets/mentorzy/Igor.jpg"),
           description:
-            "Absolwent Regionalnego Centrum Edukacji Zawodowej w Biłgoraju, udziela się w projektach związanych z web developingiem oraz game devem, lubi dobrą fabułę zarówno w grach jak i książkach.",
-          git: "https://github.com/f10k1",
-          link: " https://www.linkedin.com/in/adrian-malec-a252321a1/",
-          active: true,
-          active2: true,
+            "Absolwent Zespołu Szkół Technicznych w Mielcu. Pasjonat tworzenia gier komputerowych, w sczególności od strony graficznej i game designu. Regularny uczestnik game jamów. <br> Jedna z moich gier powstałych na Game Jamie: <a href='https://ezykill.itch.io/flapybat' target='_blank'>Flapy Bat</a>",
+          git: "",
+          link: "",
+          art: "https://www.artstation.com/ezykill",
+          active: false,
+          active2: false,
         },
         {
           name: "Maciek Pietrasz",
@@ -135,6 +157,17 @@ export default {
             'Współtwórca projektu i osoba odpowiedzialna za tworzenia grafiki w projekcie "Roguelike". Miłośnik książek o tematyce fantasy. Planujacy swoje działania realista. Ambitny i wytrwały w wyznaczonych celach.',
           git: "https://github.com/Komosabe",
           link: "/",
+          active: true,
+          active2: false,
+        },
+        {
+          name: "Mateusz Fesz",
+          position: "Low-Level Programmer",
+          jpg: require("@/assets/mentorzy/Mateusz.jpg"),
+          description:
+            "Absolwent ZSTiO w Krośnie. Główny kierunek zainteresowań to programowanie niskopoziomowe. Członek m.in. zespołu rozwijającego system operacyjny MicrOS, a także pasjonat języka programowania RUST. W wolnym czasie zajmuje się Arduino i szkoli swoje techniki kulinarne.",
+          git: "https://github.com/MatiF100",
+          link: "",
           active: true,
           active2: false,
         },

@@ -3,6 +3,7 @@
     <v-row no-gutters class="mx-5 mb-5 align-center justify-center">
       <h1 class="pt-3">Dołącz do nas!</h1>
     </v-row>
+    <counter class="my-10" />
     <div class="mx-10">
       <div
         class="accent rounded-pill p-5"
@@ -30,11 +31,11 @@
 
         <v-row no-gutters justify="center" class="mt-8">
           <b-button
-            active
+            disabled
             pill
             class="mt-0 p-3 mb-5"
             target="_blank"
-            style="background: rgb(10, 72, 130); cursor: pointer; font-size: 1.65rem"
+            style="font-size: 1.65rem"
             href="https://kod.prz.edu.pl/joinjunior/"
             >Aplikuj!</b-button
           >
@@ -45,7 +46,12 @@
 </template>
 
 <script>
+import Counter from './Counter.vue'
+
 export default {
+  components: {
+    Counter
+  },
   data() {
     return {
       icons: [

@@ -1,7 +1,11 @@
 <template>
   <section>
     <div v-if="$vuetify.breakpoint.xlOnly">
-      <v-row no-gutters class="align-center justify-center text-center" style="margin: 0px 100px">
+      <v-row
+        no-gutters
+        class="align-center justify-center text-center"
+        style="margin: 0px 100px"
+      >
         <v-col cols="4" class="mx-16">
           <v-img
             fluid
@@ -10,7 +14,10 @@
             class="d-flex justify-center rounded py-5 my-2"
           ></v-img>
         </v-col>
-        <v-col cols="4" class="accent h5 px-4 pt-5 pb-2 mb-0 mx-16 text-center rounded-xl">
+        <v-col
+          cols="4"
+          class="accent h5 px-4 pt-5 pb-2 mb-0 mx-16 text-center rounded-xl"
+        >
           <p>{{ text_skni }}</p>
           <p>{{ text_app }}</p>
         </v-col>
@@ -32,7 +39,9 @@
             class="d-flex justify-center rounded py-5 my-4"
           ></v-img>
         </v-col>
-        <v-col class="accent h5 px-4 pt-5 pb-2 my-6 mx-7 text-center rounded-xl">
+        <v-col
+          class="accent h5 px-4 pt-5 pb-2 my-6 mx-7 text-center rounded-xl"
+        >
           <p>{{ text_app }}</p>
         </v-col>
       </v-row>
@@ -45,7 +54,10 @@
         >
           <p>{{ text_skni }}</p>
         </v-col>
-        <v-col cols="auto" class="accent h5 px-4 pt-5 pb-2 my-5 text-center rounded-xl">
+        <v-col
+          cols="auto"
+          class="accent h5 px-4 pt-5 pb-2 my-5 text-center rounded-xl"
+        >
           <p>{{ text_app }}</p>
         </v-col>
         <v-col cols="auto">
@@ -65,11 +77,10 @@
       >
         <p v-html="text_end"></p>
         <b-button
-          active
+          disabled
           pill
           size="lg"
           class="mt-0 p-3 mb-5"
-          style="background: rgb(10, 72, 130); cursor: pointer"
           href="https://kod.prz.edu.pl/joinjunior/"
           target="_blank"
           >Aplikuj już dziś!</b-button
