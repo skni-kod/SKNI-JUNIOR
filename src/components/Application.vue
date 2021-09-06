@@ -3,6 +3,7 @@
     <v-row no-gutters class="mx-5 mb-5 align-center justify-center">
       <h1 class="pt-3">Dołącz do nas!</h1>
     </v-row>
+    <counter class="my-10" />
     <div class="mx-10">
       <div
         class="accent rounded-pill p-5"
@@ -45,7 +46,12 @@
 </template>
 
 <script>
+import Counter from './Counter.vue'
+
 export default {
+  components: {
+    Counter
+  },
   data() {
     return {
       icons: [
