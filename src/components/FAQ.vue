@@ -3,7 +3,7 @@
     <v-col cols="10">
       <h1 class="text-center">Najczęściej zadawane pytania</h1>
     </v-col>
-      <v-col sm="11" md="9" lg="8" xl="6" class="mx-2 mb-16 pb-4">
+      <v-col sm="11" md="9" lg="8" xl="6" class="mx-2">
       <v-expansion-panels focusable accordion>
         <v-expansion-panel
           v-for="(question, i) in questions"

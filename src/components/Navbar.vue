@@ -1,17 +1,17 @@
 <template>
   <v-toolbar
-    height="110px"
+    height="100px"
     dark
     color="primary"
     id="nav"
     style="position: sticky; top:0; left: 0; width: 100%; z-index: 20;"
   >
     <v-row align="center">
-      <v-toolbar-title class="pl-5 d-none d-md-flex">
+      <v-toolbar-title class="pl-4 d-none d-md-flex">
         <img
           :src="require('@/assets/logaSKNI-KOD/logoJunior.png')"
           class="img-fluid"
-          style="height: 95px"
+          style="height: 79px"
         />
       </v-toolbar-title>
 
@@ -20,7 +20,7 @@
         text
         v-for="(item, i) in items"
         :key="item.key"
-        class="mr-4 transparent rounded-pill white--text"
+        class="transparent rounded-pill white--text"
         @click="emit(i)"
       >
         {{ item.name }}
@@ -35,11 +35,12 @@ export default {
     return {
       active: false,
       items: [
-        { key: "home", link: "/", icon: "house", name: "O programie" },
-        { key: "mentors", link: "/mentors", icon: "person", name: "Mentorzy" },
-        { key: "application", link: "/", icon: "", name: "Rekrutacja" },
-        { key: "partners", link: "/", icon: "", name: "Partnerzy" },
-        { key: "faq", link: "/", icon: "", name: "FAQ" },
+        { key: "home", name: "O programie" },
+        { key: "mentors", name: "Mentorzy" },
+        { key: "application", name: "Rekrutacja" },
+        { key: "partners", name: "Partnerzy" },
+        { key: "faq", name: "FAQ" },
+        { key: "docs", name: "Dokumenty" },
       ],
     };
   },
