@@ -9,7 +9,7 @@
         <v-col cols="4" class="mx-16">
           <v-img
             fluid
-            :src="require('@/assets/coding.jpg')"
+            :src="require('@/assets/jpg/coding.jpg')"
             style="width: 45vw; max-height: 500px; filter: drop-shadow(3px 3px 3px BurlyWood)"
             class="d-flex justify-center rounded py-5 my-2"
           ></v-img>
@@ -34,7 +34,7 @@
         <v-col cols="6">
           <v-img
             fluid
-            :src="require('@/assets/coding.jpg')"
+            :src="require('@/assets/jpg/coding.jpg')"
             style="width: 42vw; max-height: 400px; max-width: 600px; margin: auto; filter: drop-shadow(3px 3px 3px BurlyWood)"
             class="d-flex justify-center rounded py-5 my-4"
           ></v-img>
@@ -63,7 +63,7 @@
         <v-col cols="auto">
           <v-img
             fluid
-            :src="require('@/assets/coding.jpg')"
+            :src="require('@/assets/jpg/coding.jpg')"
             style="max-height: 450px; filter: drop-shadow(3px 3px 3px BurlyWood)"
             class="d-flex justify-center rounded py-5 my-5"
           ></v-img>

@@ -2,7 +2,7 @@
   <div
     :style="
       'background:linear-gradient(90deg,rgb(255, 255, 255, 0) 0%,rgba(10, 72, 130, 0.6) 0%), url(' +
-        require('../assets/section_bg.png') +
+        require('../assets/jpg/section_bg.png') +
         ');background-repeat:no-repeat;background-size:cover;'
     "
   >

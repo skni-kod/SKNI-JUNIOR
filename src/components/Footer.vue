@@ -10,7 +10,7 @@
         <b-img
           fluid
           style="height: 40px; border-right: 1px solid black"
-          :src="require('../assets/logo_black.svg')"
+          :src="require('../assets/logaSKNI-KOD/logo_black.svg')"
           class="pr-4 mr-1"
         ></b-img>
         <a

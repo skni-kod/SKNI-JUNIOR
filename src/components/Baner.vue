@@ -120,7 +120,7 @@ div.half:nth-child(1) {
       rgb(255, 255, 255, 0) 0%,
       rgba(10, 72, 130, 0.8) 0%
     ),
-    url("../assets/background_image.jpg");
+    url("../assets/jpg/background_image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -196,7 +196,7 @@ div.half:nth-child(2) p.logo {
       rgb(255, 255, 255, 0) 0%,
       rgba(10, 72, 130, 0.8) 0%
     ),
-    url("../assets/background_image.jpg");
+    url("../assets/jpg/background_image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
