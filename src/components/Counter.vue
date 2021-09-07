@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <h2 id="headline">Do rozpoczęcia rekrutacji pozostało:</h2>
-    <div id="countdown">
+    <h2>Do rozpoczęcia rekrutacji pozostało:</h2>
+    <div>
       <ul>
         <li>
           <span>{{ dispD }}</span
@@ -32,8 +32,7 @@
 }
 
 h2 {
-  font-weight: normal;
-  letter-spacing: 0.125rem;
+  letter-spacing: 0.18rem;
   text-transform: uppercase;
 }
 

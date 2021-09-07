@@ -29,12 +29,12 @@ export default {
     return {
       files: [
         {
-          text: "Regulamin.pdf",
-          link: "/documents/regulamin.pdf",
+          text: "Regulamin",
+          link: "/junior/documents/regulamin.pdf",
         },
         {
-          text: "Zgoda_rodziców.pdf",
-          link: "/documents/regulamin.pdf",
+          text: "Zgoda Rodziców",
+          link: "/junior/documents/zgoda_rodzicow.pdf",
         },
       ],
     };
