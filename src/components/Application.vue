@@ -3,7 +3,7 @@
     <v-row no-gutters class="mx-5 mb-5 align-center justify-center">
       <h1 class="pt-3">Dołącz do nas!</h1>
     </v-row>
-    <counter class="my-10" />
+    <counter @visible="asd()" v-if="visibility" class="my-10" />
     <div class="mx-10">
       <div
         class="accent rounded-pill p-5"
@@ -33,12 +33,20 @@
           <b-button
             active
             pill
-            class="mt-0 p-3 mb-5"
+            class="mt-0 p-3"
             target="_blank"
             style="background: rgb(10, 72, 130); cursor: pointer; font-size: 1.65rem"
             href="https://kod.prz.edu.pl/joinjunior/"
             >Aplikuj!</b-button
           >
+        </v-row>
+        <v-row no-gutters justify="center" class="mt-8 px-15 mx-15">
+          <h6>
+            *Formularz dotyczy osób pełnoletnich, w przypadku niepełnoletnich
+            rekrutacja odbywa się poprzez wypełnienie Ankiety dołączonej do
+            Zgody rodzica na udział oraz przekazaniu jej nauczycielowi
+            koordynujacemu
+          </h6>
         </v-row>
       </div>
     </div>
@@ -46,18 +54,19 @@
 </template>
 
 <script>
-import Counter from './Counter.vue'
+import Counter from "./Counter.vue";
 
 export default {
   components: {
-    Counter
+    Counter,
   },
   data() {
     return {
+      visibility: true,
       icons: [
         {
           name: "mdi-pencil-box-outline",
-          description: "1. Wypełnij formularz",
+          description: "1. Wypełnij formularz*",
         },
         { name: "mdi-alarm", description: "2. Czekaj na przyjęcie" },
         {
@@ -70,6 +79,11 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    asd() {
+      this.visibility = false;
+    },
   },
 };
 </script>
