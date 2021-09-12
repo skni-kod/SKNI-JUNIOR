@@ -109,7 +109,7 @@ export default {
           position: "Copywriter",
           jpg: require("@/assets/mentorzy/Patrycja.jpg"),
           description:
-            "Absolwentka Zarządzania projektami, miłośniczka content marketingu oraz pisania. Prowadząca fanpage SKNI KOD.",
+            "Absolwentka Zarządzania Projektami na Politechnice Rzeszowskiej, miłośniczka content marketingu oraz pisania. Prowadząca fanpage SKNI KOD.",
           git: "",
           link: "https://www.linkedin.com/in/patrycja-cyrul",
           active: false,
