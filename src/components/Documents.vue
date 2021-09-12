@@ -30,11 +30,11 @@ export default {
       files: [
         {
           text: "Regulamin",
-          link: "/junior/documents/regulamin.pdf",
+          link: "/junior/documents/REGULAMIN_PROGRAMU_EDUKACYJNEGO_SKNI_JUNIOR.pdf",
         },
         {
           text: "Zgoda Rodziców",
-          link: "/junior/documents/zgoda_rodzicow.pdf",
+          link: "/junior/documents/Ankieta_Oraz_Zgoda_Rodzica_SKNI_JUNIOR.pdf",
         },
       ],
     };
