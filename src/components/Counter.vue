@@ -120,6 +120,7 @@ export default {
 
         if (distance < 0) {
           clearInterval(timer);
+          this.$emit('visible');
           return;
         }
         const days = Math.floor(distance / this._days);
