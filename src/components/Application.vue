@@ -3,7 +3,6 @@
     <v-row no-gutters class="mx-5 mb-5 align-center justify-center">
       <h1 class="pt-3">Dołącz do nas!</h1>
     </v-row>
-    <counter @visible="asd()" v-if="visibility" class="my-10" />
     <div class="mx-10">
       <div
         class="accent rounded-pill p-5"
@@ -45,7 +44,7 @@
             *Formularz dotyczy osób pełnoletnich, w przypadku niepełnoletnich
             rekrutacja odbywa się poprzez wypełnienie Ankiety dołączonej do
             Zgody rodzica na udział oraz przekazaniu jej nauczycielowi
-            koordynujacemu
+            koordynującemu
           </h6>
         </v-row>
       </div>
@@ -54,15 +53,9 @@
 </template>
 
 <script>
-import Counter from "./Counter.vue";
-
 export default {
-  components: {
-    Counter,
-  },
   data() {
     return {
-      visibility: true,
       icons: [
         {
           name: "mdi-pencil-box-outline",
@@ -79,11 +72,6 @@ export default {
         },
       ],
     };
-  },
-  methods: {
-    asd() {
-      this.visibility = false;
-    },
   },
 };
 </script>

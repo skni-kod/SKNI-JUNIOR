@@ -33,7 +33,7 @@ export default {
           link: "/junior/documents/REGULAMIN_PROGRAMU_EDUKACYJNEGO_SKNI_JUNIOR.pdf",
         },
         {
-          text: "Zgoda Rodziców",
+          text: "Formularz dla niepełnoletnich",
           link: "/junior/documents/Ankieta_Oraz_Zgoda_Rodzica_SKNI_JUNIOR.pdf",
         },
       ],
