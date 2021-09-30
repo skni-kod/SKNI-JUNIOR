@@ -30,11 +30,11 @@
 
         <v-row no-gutters justify="center" class="mt-8">
           <b-button
-            active
+            disabled
             pill
             class="mt-0 p-3"
             target="_blank"
-            style="background: rgb(10, 72, 130); cursor: pointer; font-size: 1.65rem"
+            style="font-size: 1.65rem"
             href="https://kod.prz.edu.pl/joinjunior/"
             >Aplikuj!</b-button
           >
