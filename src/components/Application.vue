@@ -3,7 +3,7 @@
     <v-row no-gutters class="mx-5 mb-5 align-center justify-center">
       <h1 class="pt-3">Dołącz do nas!</h1>
     </v-row>
-    <div class="mx-10">
+    <div class="mx-10 mb-16">
       <div
         class="accent rounded-pill p-5"
         style="max-width: 1500px; margin:auto"
@@ -49,11 +49,17 @@
         </v-row>
       </div>
     </div>
+    <registration-end />
   </section>
 </template>
 
 <script>
+import RegistrationEnd from './RegistrationEnd.vue'
+
 export default {
+  components: {
+    RegistrationEnd
+  },
   data() {
     return {
       icons: [
