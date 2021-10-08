@@ -77,11 +77,10 @@
       >
         <p v-html="text_end"></p>
         <b-button
-          active
+          disabled
           pill
           size="lg"
           class="mt-0 p-3 mb-5"
-          style="background: rgb(10, 72, 130); cursor: pointer"
           href="https://kod.prz.edu.pl/joinjunior/"
           target="_blank"
           >Aplikuj już dziś!</b-button

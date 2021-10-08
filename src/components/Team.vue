@@ -142,7 +142,7 @@ export default {
           position: "3D Artist",
           jpg: require("@/assets/mentorzy/Igor.jpg"),
           description:
-            "Absolwent Zespołu Szkół Technicznych w Mielcu. Pasjonat tworzenia gier komputerowych, w sczególności od strony graficznej i game designu. Regularny uczestnik game jamów. <br> Jedna z moich gier powstałych na Game Jamie: <a href='https://ezykill.itch.io/flapybat' target='_blank'>Flapy Bat</a>",
+            "Absolwent Zespołu Szkół Technicznych w Mielcu. Pasjonat tworzenia gier komputerowych, w sczególności od strony graficznej i game designu. Regularny uczestnik game jamów. <br> Jedna z jego gier powstałych na Game Jamie: <a href='https://ezykill.itch.io/flapybat' target='_blank'>Flapy Bat</a>",
           git: "",
           link: "",
           art: "https://www.artstation.com/ezykill",

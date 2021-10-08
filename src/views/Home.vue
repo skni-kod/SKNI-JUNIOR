@@ -14,11 +14,8 @@
     <div ref="3" style="padding-top: 120px">
       <partners />
     </div>
-    <div ref="4" style="padding-top: 120px">
+    <div ref="4" style="padding-top: 120px; padding-bottom: 90px">
       <faq />
-    </div>
-    <div ref="5" style="padding-top: 120px; padding-bottom: 30px">
-      <documents />
     </div>
   </div>
 </template>
@@ -30,10 +27,9 @@ import ProjectInfo from "../components/ProjectInfo.vue";
 import Partners from "../components/Partners.vue";
 import Application from "../components/Application.vue";
 import Faq from "../components/FAQ.vue";
-import Documents from "../components/Documents.vue";
 
 export default {
-  components: { Navbar, Team, ProjectInfo, Partners, Application, Faq, Documents },
+  components: { Navbar, Team, ProjectInfo, Partners, Application, Faq },
   name: "Home",
   methods: {
     lol() {

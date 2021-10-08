@@ -3,8 +3,7 @@
     <v-row no-gutters class="mx-5 mb-5 align-center justify-center">
       <h1 class="pt-3">Dołącz do nas!</h1>
     </v-row>
-    <counter @visible="asd()" v-if="visibility" class="my-10" />
-    <div class="mx-10">
+    <div class="mx-10 mb-16">
       <div
         class="accent rounded-pill p-5"
         style="max-width: 1500px; margin:auto"
@@ -31,11 +30,11 @@
 
         <v-row no-gutters justify="center" class="mt-8">
           <b-button
-            active
+            disabled
             pill
             class="mt-0 p-3"
             target="_blank"
-            style="background: rgb(10, 72, 130); cursor: pointer; font-size: 1.65rem"
+            style="font-size: 1.65rem"
             href="https://kod.prz.edu.pl/joinjunior/"
             >Aplikuj!</b-button
           >
@@ -45,24 +44,24 @@
             *Formularz dotyczy osób pełnoletnich, w przypadku niepełnoletnich
             rekrutacja odbywa się poprzez wypełnienie Ankiety dołączonej do
             Zgody rodzica na udział oraz przekazaniu jej nauczycielowi
-            koordynujacemu
+            koordynującemu
           </h6>
         </v-row>
       </div>
     </div>
+    <registration-end />
   </section>
 </template>
 
 <script>
-import Counter from "./Counter.vue";
+import RegistrationEnd from './RegistrationEnd.vue'
 
 export default {
   components: {
-    Counter,
+    RegistrationEnd
   },
   data() {
     return {
-      visibility: true,
       icons: [
         {
           name: "mdi-pencil-box-outline",
@@ -79,11 +78,6 @@ export default {
         },
       ],
     };
-  },
-  methods: {
-    asd() {
-      this.visibility = false;
-    },
   },
 };
 </script>
